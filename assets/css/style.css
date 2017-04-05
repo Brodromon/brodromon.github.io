@@ -188,7 +188,28 @@
     top: 0;
 }
 #logo_dark {
-    background-image: url(../images/logo_dark.png);
+    text-transform: uppercase;
+    border: 1px #666 solid;
+    line-height: 20px;
+    color: #666;
+    background: rgba(0, 0, 0, .1);
+    transition: 0.2s ease-in-out;
+}
+#logo_dark span {
+    color: #ff7200;
+}
+#logo_dark:hover {
+    background: #666;
+    color: #fff;
+}
+#logo_dark p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+}
+#logo_dark p:first-child {
+    margin-top: 15px;
+    font-size: 38px;
 }
 #abt_disc {
     margin-top: 120px;
@@ -251,6 +272,7 @@
     line-height: 48px;
     text-transform: uppercase;
     color: #ff7200;
+    transition: 0.4s ease;
 }
 .desc_resp_th_btn:hover {
     color: #fff;
@@ -292,8 +314,12 @@
     
 }
 
-.prop img {
-    margin-bottom: 60px;
+.prop i {
+    color: #ff7200;
+    font-size: 38px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 .prop_desc {
     display: inline-block;
@@ -406,13 +432,13 @@
 .footer_social {
     display: inline-block;
 }
-#portf_pows {
+#portf_rows {
     margin: 50px 0 50px 0;
+    height: 52%;
 }
 #portfolioMain {
     background: #fff;
     text-align: center;
-    height: 70vh;
     width: 1320px;
     margin: 0 auto;
     margin-top: 40px;
