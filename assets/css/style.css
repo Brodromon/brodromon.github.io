@@ -176,7 +176,6 @@
     
 }
 #hdr_about {
-    margin: 0 375px;
     text-align: center;
     padding: 0;
 }
@@ -508,7 +507,7 @@
     text-align: center;
 }
 #technMain {
-    height: 8vh;
+    height: 80px;
     background: #ff7200;
     text-align: center;
 }
@@ -539,7 +538,7 @@
 #resp_hdr {
     margin-bottom: 30px;
 }
-.resp img,
+.resp i,
 .resp_info_main,
 .resp_info {
     display: inline-block;  
@@ -553,16 +552,20 @@
 #pc_view {
     height: 100%;
     width: 45%;
-}
-#pc_view {
     float: left
 }
 #resps {
     float: right;
+     margin-left: 30px;
 }
-
-#resps {
-    margin-left: 30px;
+.resp i {
+    font-size: 30px;
+    color: #fff;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #ff7200;
 }
 .resp {
     margin-bottom: 60px;
