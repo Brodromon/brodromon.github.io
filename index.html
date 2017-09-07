@@ -1,464 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OXXO</title>
-    <link rel="shortcut icon" href="assets/images/success.ico" type="image/x-icon">
-    <!--  Adding styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+    <title>Ш•И•Ш•К•А</title>
+    <!--    ADDING STYLES-->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!--  Adding scripts -->
-    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/js/dics_par.js"></script>
-    <script type="text/javascript" src="assets/js/slider.js"></script>
-    <script type="text/javascript" src="assets/js/top_menu_script.js"></script>
-    <script type="text/javascript" src="assets/js/team_width.js"></script>
-    
+    <!-- ADDING SCRIPTS -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/js.js"></script>
 </head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
-    <div id="wrapper">
-        <div id="headerMain" class="block_860">
-            <div id="header" class="header container">
-                <ul class="navbar_ox navbar_ox_hdr col-lg-5" id="l_nav">
-                    <li class="abt_top_menu top_menu"><p>About us</p></li>
-                    <li class="who_top_menu top_menu"><p>Who we are?</p></li>
-                    <li class="tm_top_menu top_menu"><p>our team</p></li>
-                    <li class="prt_top_menu top_menu"><p>portfolio</p></li>
-                </ul>
-                <a href="#">
-                   <div  class="logo" id="logo_light">
-                        <p>OXXO</p>
-                        <p>responive theme</p>
-                    </div>
-                </a>
-                <ul class="navbar_ox navbar_ox_hdr col-lg-5" id="r_nav">
-                    <li class="cl_top_menu top_menu"><p>clients</p></li>
-                    <li class="srvs_top_menu top_menu"><p>servises</p></li>
-                    <li class="how_top_menu top_menu"><p>how we do?</p></li>
-                    <li class="cont_top_menu top_menu"><p>contact us</p></li>
-                </ul>
+    <div id="page-wrapper">
+        <div class="header">
+          <div class="container">
+            <div id="logo" class="logo">
+              <a href="">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>LOGO</span>
+              </a>
             </div>
-            <div id="disc" class="container">
-                <div id="hdr_dics">we are.oxxo.</div>
-                <div id="main_disc">
-                    <ul>
-                        <li>web design</li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li>social media</li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li>graphics</li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li>startup</li>
-                    </ul>
-                </div>
-                <a href="#"><div id="btn_disc">More about us</div></a>
+            <div id="nav">
+              <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Аренда</a></li>
+                <li><a href="">Галерея</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="aboutUs block_860 container-fluid">
-            <div class="hdr_about header">
-                 <div class="container" id="hdr_about">
-                     <ul class="navbar_ox navbar_ox_abt col-lg-5" id="l_nav_abtus">
-                    <li class="abt_top_menu top_menu"><p>About us</p></li>
-                    <li class="who_top_menu top_menu"><p>Who we are?</p></li>
-                    <li class="tm_top_menu top_menu"><p>our team</p></li>
-                    <li class="prt_top_menu top_menu"><p>portfolio</p></li>
-                </ul>
-                <a href="#">
-                   <div  class="logo" id="logo_dark">
-                        <p>OXX<span>O</span></p>
-                        <p>responive theme</p>
-                    </div>
-                </a>
-                <ul class="navbar_ox navbar_ox_abt col-lg-5 " id="r_nav_abtus">
-                    <li class="cl_top_menu top_menu"><p>clients</p></li>
-                    <li class="srvs_top_menu top_menu"><p>servises</p></li>
-                    <li class="how_top_menu top_menu"><p>how we do?</p></li>
-                    <li class="cont_top_menu top_menu"><p>contact us</p></li>
-                </ul>
-                 </div>
-            </div>
-            <div class="container">
-                <div id="abt_disc" class="desc_all">
-                    <div id="abt_desc_head" class="hdr_hdr">About us</div>
-                    <hr class="hdr_hr">
-                    <div id="abt_desc_info" class="hdr_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente hic sed perspiciatis tenetur delectus fuga consectetur commodi praesentium similique provident dolores iusto cumque eum modi vitae, dolore, nam rem officiis.</div>
-                </div>
-                <div id="ox_resp_th">
-                    <div class="slider_resp_th col-lg-6">
-                       <div class="slide">
-                            <div id="slide_1" class="slider_abt"><img src="assets/images/slider_resp_th_1.png" alt=""></div>
-                       </div>
-                        <div class="slide">
-                            <div id="slide_2" class="slider_abt"><img src="assets/images/slider_resp_th_1.png" alt=""></div>
-                       </div>
-                    </div>
-                    <div id="desc_resp_th" class="col-lg-5">
-                        <div id="desc_resp_th_hdr">What is Oxxo Responsive Theme?</div>
-                        <div id="desc_resp_th_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur, consequatur laborum eaque, quidem neque, qui maxime autem nobis adipisci pariatur laudantium magnam amet, dicta ullam vel reiciendis maiores corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam possimus aut rem dicta dolorem praesentium, quis recusandae atque voluptatem fugit eius ea natus fugiat nisi consequuntur molestias. Nam, eos, laudantium.</div>
-                        <a href=""><div class="desc_resp_th_btn">meet us now</div></a>
-                        <a href=""><div class="desc_resp_th_btn">contact us</div></a>
-                    </div>
-                </div>
-            </div>
+        <div id="main-news-board">
+          <d
+          divdsывiv class="container">
+            <h1 id="news-board-hdr">БОЛЬШЕ. ЛУЧШЕ. БЕЗОПАСНЕЕ.</h1>
+            <p id="news-board-desc">Это описание новости. </p>
+            <a href="" id="news-board-btn">Подробнее</a>
+          </div>
         </div>
-        <div class="container-fluid block_860" id="section">
-            <div id="selection_header" class="desc_all ">
-                <div id="select_desc_hdr" class="hdr_hdr">WE ARE AMAZING. YES WE ARE.</div>
-                <hr class="hdr_hr">
-                <div id="select_desc_info" class="hdr_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-            </div>
-            <div id="propMain" class="">
-                <div class="props">
-                    <div class="prop">
-                        <i class="fa fa-television" aria-hidden="true"></i>
-                        <div class="prop_desc">
-                            <h4>RESPONSIVE LAYOUT</h4>
-                            <p>Our theme has responsive layout, coded with Boostrap 3. Availab</p>
-                        </div>
-                    </div>
-                    <div class="prop">
-                        <i class="fa fa-magic" aria-hidden="true"></i>
-                        <div class="prop_desc">
-                            <h4>RESPONSIVE LAYOUT</h4>
-                            <p>Our theme has responsive layout, coded with Boostrap 3. Availab</p>
-                        </div>
-                    </div>
-                    <div class="prop">
-                        <i class="fa fa-flask" aria-hidden="true"></i>
-                        <div class="prop_desc">
-                            <h4>RESPONSIVE LAYOUT</h4>
-                            <p>Our theme has responsive layout, coded with Boostrap 3. Availab</p>
-                        </div>
-                    </div>
+        <div id="lease-house">
+          <div class="container">
+            <h2 id="lease-hdr" class="text-center">АРЕНДА ЖИЛЬЯ</h2>
+            <div class="row">
+              <div class="house-block-main col-md-6 col-lg-6">
+                <img class="house-block-img" src="assets/images/house-block-img-1.jpg" alt="">
+                <div class="house-rooms">2 комнаты</div>
+                <div class="house-name">Название номера</div>
+                <hr class="col align-self-start">
+                <div class="house-desc">
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
                 </div>
-                <div class="props" id="props_2">
-                    <div class="prop">
-                        <i class="fa fa-cloud" aria-hidden="true"></i>
-                        <div class="prop_desc">
-                            <h4>RESPONSIVE LAYOUT</h4>
-                            <p>Our theme has responsive layout, coded with Boostrap 3. Availab</p>
-                        </div>
-                    </div>
-                    <div class="prop">
-                        <i class="fa fa-paperclip" aria-hidden="true"></i>
-                        <div class="prop_desc">
-                            <h4>RESPONSIVE LAYOUT</h4>
-                            <p>Our theme has responsive layout, coded with Boostrap 3. Availab</p>
-                        </div>
-                    </div>
-                    <div class="prop">
-                        <i class="fa fa-microphone" aria-hidden="true"></i>
-                        <div class="prop_desc">
-                            <h4>RESPONSIVE LAYOUT</h4>
-                            <p>Our theme has responsive layout, coded with Boostrap 3. Availab</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="house-block-main col-md-6 col-lg-6">
+                <img class="house-block-img" src="assets/images/house-block-img-2.jpg" alt="">
+                <div class="house-rooms">2 комнаты</div>
+                <div class="house-name">Название номера</div>
+                <hr class="col align-self-start">
+                <div class="house-desc">
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
                 </div>
+              </div>
+              <div class="house-block-main col-md-6 col-lg-6">
+                <img class="house-block-img" src="assets/images/house-block-img-3.jpg" alt="">
+                <div class="house-rooms">2 комнаты</div>
+                <div class="house-name">Название номера</div>
+                <hr class="col align-self-start">
+                <div class="house-desc">
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                </div>
+              </div>
+              <div class="house-block-main col-md-6 col-lg-6">
+                <img class="house-block-img" src="assets/images/house-block-img-4.jpg" alt="">
+                <div class="house-rooms">2 комнаты</div>
+                <div class="house-name">Название номера</div>
+                <hr class="col align-self-start">
+                <div class="house-desc">
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                  Небольшое описание данного жилья.
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div id="teamMain" class="container block_860">
-            <div id="team_desc_top" class="desc_all">
-                <div id="team_desc_top_hdr" class="hdr_hdr">WE ARE A TEAM.</div>
-                <hr class="hdr_hr">
-                <div id="team_dest_top_info" class="hdr_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-            </div>
-            <div id="team_ppl">
-                <div class="pers_team">
-                    <div class="pers_team_img"><img src="assets/images/pers_team_1.png" alt=""></div>
-                    <div class="name-place">Jenniffer Doe <i>/ Web Designer</i></div>
-                    <div class="pers_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-                       <div class="socials">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-tumblr" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                </div>
-                </div>
-                <div class="pers_team">
-                    <img src="assets/images/pers_team_2.png" alt="">
-                    <div class="name-place">John Doe <i>/ General Manager</i></div>
-                    <div class="pers_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-                       <div class="socials">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-tumblr" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                </div>
-                </div>
-                <div class="pers_team">
-                    <img src="assets/images/pers_team_3.png" alt="">
-                    <div class="name-place">Andrea Doe <i>/ Graphic Designer</i></div>
-                    <div class="pers_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-                       <div class="socials">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-tumblr" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                </div>
-                </div>
-                <div class="pers_team">
-                    <img src="assets/images/pers_team_4.png" alt="">
-                    <div class="name-place">Michael Doe <i>/ CEO</i></div>
-                    <div class="pers_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-                       <div class="socials">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-tumblr" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                </div>
-                </div>
-            </div>
+        <h1 style="margin:30px 0;" class="text-center">НАШЕ МЕСТОНАХОЖДЕНИЕ</h1>
+        <div id="map" class="container">
+            <script>
+              function initMap() {
+                var uluru = {lat: 46.111530, lng: 32.900224};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 15,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWoJDtugY91Eo9jmfm7wlxXM4dz7n4zvg&callback=initMap">
+          </script>
         </div>
-        <hr>
-        <div id="portfolioMain" class="container-flux block_860">
-           <div class="desc_all" id="c_our_work">
-                <div id="c_our_hdr" class="hdr_hdr">SEE OUR WORK.</div>
-                <hr class="hdr_hr">
-                <div id="c_our_info" class="hdr_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
+        <div id="rewiew-block-main">
+          <h1 class="text-center">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
+          <div class="container">
+            <div class="rewiew col-md-4 col-lg-4">
+              <div class="rewiewer-comment">«Это отзыв. Кликните здесь, чтобы отредактировать и написать хороший отзыв о ваших услугах».</div>
+              <div class="rewiewer-name">Вася Пупкин</div>
             </div>
-            <div id="portf_rows">
-                <div class="portfolio-row">
-                <div class="port" id="port_1"></div>
-                <div class="port" id="port_2"></div>
-                <div class="port" id="port_3"></div>
-                <div class="port" id="port_4"></div>
+            <div class="rewiew col-md-4 col-lg-4">
+              <div class="rewiewer-comment">«Это отзыв. Кликните здесь, чтобы отредактировать и написать хороший отзыв о ваших услугах».</div>
+              <div class="rewiewer-name">Оля Полякова</div>
             </div>
-            <div class="portfolio-row">
-                <div class="port" id="port_5"></div>
-                <div class="port" id="port_6"></div>
-                <div class="port" id="port_7"></div>
-                <div class="port" id="port_8"></div>
+            <div class="rewiew col-md-4 col-lg-4">
+              <div class="rewiewer-comment">«Это отзыв. Кликните здесь, чтобы отредактировать и написать хороший отзыв о ваших услугах».</div>
+              <div class="rewiewer-name">Надя Дорофеева</div>
             </div>
-            </div>
+          </div>
         </div>
-        <div class="s_client_main">
-            <div class="s_client_top container-fluid">
-               <div class="hdr_hdr s_client_hdr">WHAT OUR CLIENTS SAY?</div>
-                <hr class="hdr_hr">
-                <div class="s_client_slider container">
-                   
-                    <div class="desc_all">
-                        <div class="hdr_p s_client_p">THEY ARE AWESOME</div>
-                        <div class="hdr_info s_client_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-                    </div>
-                    <div class="desc_all">
-                        <div class="hdr_p s_client_p">THEY ARE AWESOME</div>
-                        <div class="hdr_info s_client_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d
-                        , consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consec, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consect, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consect</div>
-                        
-                    </div>
-                </div>
+        <div id="contacts-block-main">
+          <div class="container">
+            <div id="contacts-block" class="col-md-6 col-lg-6">
+              <h3>НАШИ КОНТАКТЫ</h3>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> +38(050) 396 16 95</p>
+              <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@telenok.ua</p>
+              <p><i class="fa fa-map-marker" aria-hidden="true"></i> ул. Чкалова, 8, Скадовск, 75-700, Украина</p>
             </div>
-            <div id="technMain" class="container-fluid">
-                <div id="tech" class="container">
-                    <div class="tech_slider">
-                        <div class="cur_techn"><img src="assets/images/cur_techn_1.png" alt=""></div>
-                        <div class="cur_techn"><img src="assets/images/cur_techn_2.png" alt=""></div>
-                        <div class="cur_techn"><img src="assets/images/cur_techn_3.png" alt=""></div>
-                        <div class="cur_techn"><img src="assets/images/cur_techn_4.png" alt=""></div>
-                        <div class="cur_techn"><img src="assets/images/cur_techn_5.png" alt=""></div>
-                        <div class="cur_techn"><img src="assets/images/cur_techn_6.png" alt=""></div>
-                    </div>
-                </div>
+            <div id="question-block" class="col-md-6 col-lg-6">
+              <h4>ЗАДАЙТЕ ЛЮБОЙ ВОПРОС И МЫ ОТВЕТИМ В БЛИЖАЙШЕЕ ВРЕМЯ!</h4>
+              <div class="col-md-6 col-lg-6">
+                <div class="question-input" id="question-name" contenteditable="true">Имя</div>
+                <div class="question-input" id="question-email" contenteditable="true">E-mail</div>
+                <div class="question-input" id="question-theme" contenteditable="true">Тема</div>
+              </div>
+              <div class="question-input col-md-6 col-lg-6" id="question-sms" contenteditable="true">Сообщение</div>
             </div>
+          </div>
         </div>
-        <div id="how_do">
-            <div class="desc_all" id="resp_hdr">
-            <div class="hdr_hdr">RESPONSIVE. POWERFUL.</div>
-            <hr class="hdr_hr">
-            <div class="hdr_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</div>
-            </div>
-            <div class="responsive">
-               <img id="pc_view" src="assets/images/pc_view.png" alt="">
-                <div id="resps">
-                    <div class="resp">
-                    <i class="fa fa-television" aria-hidden="true"></i>
-                   <div class="resp_info_main">
-                        <div class="resp_zag">Responsive Layout</div>
-                        <div class="resp_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ds</div>
-                   </div>
-                </div>
-                <div class="resp">
-                    <i class="fa fa-magic" aria-hidden="true"></i>
-                     <div class="resp_info_main">
-                        <div class="resp_zag">Responsive Layout</div>
-                        <div class="resp_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ds</div>
-                   </div>
-                </div>
-                <div class="resp">
-                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                    <div class="resp_info_main">
-                        <div class="resp_zag">Responsive Layout</div>
-                        <div class="resp_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ds</div>
-                   </div>
-                </div>
-                </div>
-            </div>
+        <div class="footer">
+        <p>Все права защищены©2017.  Shishka.ua</p>
         </div>
-        <footer class="footerMain">
-            <div id="footer_top">
-                <div class="container">
-                    <div id="footer_main_inf">
-                    <div class="footer_info_main">
-                        <div class="footer_info_zag">
-                            <img src="assets/images/footer_info_zag_1.png" alt="">
-                            </div>
-                            <div id="footer_info_text" class="f_i">Lorem ipsum dolor sit amet, conse adipiscing</div>
-                            <div id="footer_info_adress" class="f_i">
-                                <h5>Adress:</h5>
-                                <p>13th Street, No:25</p>
-                            </div>
-                            <div id="footer_info_phone" class="f_i">
-                                <h5>Phone:</h5>
-                                <p>123-456-7890</p>
-                            </div>
-                            <div id="footer_info_mail" class="f_i">
-                                <h5>Mail:</h5>
-                                <p>info@ox.xo</p>
-                            </div>
-                            <div id="footer_socials">
-                                <div class="socials">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-tumblr" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </div>
-                                <div class="socials">
-                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                    </div>
-<!--
-                        <div class="footer_info_main">
-                        <div class="footer_info_zag">
-                            <img src="assets/images/footer_info_zag_1.png" alt="">
-                            </div>
-                            <div id="footer_info_text" class="f_i">Lorem ipsum dolor sit amet, conse adipiscing</div>
-                            <div id="footer_info_adress" class="f_i">
-                                <h5>Adress:</h5>
-                                <p>13th Street, No:25</p>
-                            </div>
-                            <div id="footer_info_phone" class="f_i">
-                                <h5>Phone:</h5>
-                                <p>123-456-7890</p>
-                            </div>
-                            <div id="footer_info_mail" class="f_i">
-                                <h5>Mail:</h5>
-                                <p>info@ox.xo</p>
-                            </div>
-                            <div id="footer_socials">
-                                <div class="social"><a href=""><img src="assets/images/social_1.png" alt=""></a></div>
-                                <div class="footer_social"><a href=""><img src="assets/images/social_2.png" alt=""></a></div>
-                                <div class="footer_social"><a href=""><img src="assets/images/social_3.png" alt=""></a></div>
-                                <div class="footer_social"><a href=""><img src="assets/images/social_4.png" alt=""></a></div>
-                                <div class="footer_social"><a href=""><img src="assets/images/social_5.png" alt=""></a></div>
-                            </div>
-                    </div>
--->
-                    <div class="footer_info_main">
-                        <div class="footer_info_zag">
-                            <img src="assets/images/footer_info_zag_2.png" alt="">
-                            </div>
-                            <div class="footer_news">
-                                <img src="assets/images/news_img_1.png" alt="">
-                                <div class="footer_news_desc">
-                                    <div class="news_zag">Lorem Ipsum Post Title</div>
-                                    <div class="news_info">Lorem ipsum dolor sit amet, conse adipiscing </div>
-                                    <div class="news_date">8 April, 2014 - by Admin</div>
-                                    </div>
-                            </div>
-                            <div class="footer_news">
-                                <img src="assets/images/news_img_2.png" alt="">
-                                <div class="footer_news_desc">
-                                    <div class="news_zag">Lorem Ipsum Post Title</div>
-                                    <div class="news_info">Lorem ipsum dolor sit amet, conse adipiscing </div>
-                                    <div class="news_date">8 April, 2014 - by Admin</div>
-                                    </div>
-                            </div>
-                            <div class="footer_news">
-                                <img src="assets/images/news_img_3.png" alt="">
-                               <div class="footer_news_desc">
-                                    <div class="news_zag">Lorem Ipsum Post Title</div>
-                                    <div class="news_info">Lorem ipsum dolor sit amet, conse adipiscing </div>
-                                    <div class="news_date">8 April, 2014 - by Admin</div>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="footer_info_main">
-                        <div class="footer_info_zag">
-                            <img src="assets/images/footer_info_zag_4.png" alt="">
-                            </div>
-                        <input placeholder="Name" type="text" class="con_field con_field_inp" id="name_field">
-                        <input placeholder="E-mail" type="email" class="con_field con_field_inp" id="email">
-                        <div contenteditable="true" class="con_field" id="mes_field"></div>
-                        <input id="mes_submit" type="button"> 
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div id="footer_bot">
-                <div class="container" id="f_bot_cont">
-                    <div id="footer_logo"><img src="assets/images/footer_logo.png" alt=""></div>
-                    <div id="footer_copy">2017 &copy; All Rights Reserved - OXXO Responsive Theme </div>
-                    <div class="footer_ul">
-                        <li><a href="">Buy This Theme</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Who we are?</a></li>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
-    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+    <script>
+    $(function(){
+$.scrollUp();
+});
+    </script>
 </body>
 </html>
