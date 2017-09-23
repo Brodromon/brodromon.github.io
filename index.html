@@ -1,170 +1,153 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ш•И•Ш•К•А</title>
-    <!--    ADDING STYLES-->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!-- ADDING SCRIPTS -->
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/js.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/emoji.css">
+    <title>Photo Wall</title>
 </head>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
-    <div id="page-wrapper">
-        <div class="header">
-          <div class="container">
-            <div id="logo" class="logo">
-              <a href="">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span>LOGO</span>
-              </a>
-            </div>
-            <div id="nav">
-              <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Аренда</a></li>
-                <li><a href="">Галерея</a></li>
-                <li><a href="">Контакты</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="main-news-board">
-          <d
-          divdsывiv class="container">
-            <h1 id="news-board-hdr">КАКОЙ-ТО ЗАГОЛОВОК.</h1>
-            <p id="news-board-desc">Это описание чего-то. </p>
-            <a href="" id="news-board-btn">Подробнее</a>
-          </div>
-        </div>
-        <div id="lease-house">
-          <div class="container">
-            <h2 id="lease-hdr" class="text-center">АРЕНДА ЖИЛЬЯ</h2>
-            <div class="row">
-              <div class="house-block-main col-md-6 col-lg-6">
-                <img class="house-block-img" src="assets/images/house-block-img-1.jpg" alt="">
-                <div class="house-rooms">2 комнаты</div>
-                <div class="house-name">Название номера</div>
-                <hr class="col align-self-start">
-                <div class="house-desc">
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
+    <div class="add-photo-button">
+              <div data-toggle="modal" data-target="#add-photo-modal" class="block fa fa-plus" aria-hidden="true"></div>
+    </div>
+        <div id="add-photo-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <h4 class="modal-title">Add new photo...</h4>
+                    <button class="close" data-dismiss="modal">X</button>
                 </div>
-              </div>
-              <div class="house-block-main col-md-6 col-lg-6">
-                <img class="house-block-img" src="assets/images/house-block-img-2.jpg" alt="">
-                <div class="house-rooms">2 комнаты</div>
-                <div class="house-name">Название номера</div>
-                <hr class="col align-self-start">
-                <div class="house-desc">
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
+                <div class="modal-body">
+                    <div id="output" class="modal-image-empty"></div>
+                        <p class="lead emoji-picker-container">
+                  <div class="addPhotoComment" data-text="Add comment here..." contenteditable="true"></div>
+            </p>
+
+                    
+                    <div class="file-input">
+                        <button type="button" class="btn btn-info">Choose a file...</button>
+                        <input type="file" name="file" id="file">
+                    </div>
                 </div>
-              </div>
-              <div class="house-block-main col-md-6 col-lg-6">
-                <img class="house-block-img" src="assets/images/house-block-img-3.jpg" alt="">
-                <div class="house-rooms">2 комнаты</div>
-                <div class="house-name">Название номера</div>
-                <hr class="col align-self-start">
-                <div class="house-desc">
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
+                <div class="modal-footer">
+               <div data-dismiss="modal" class="btn-close">Add <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                 </div>
-              </div>
-              <div class="house-block-main col-md-6 col-lg-6">
-                <img class="house-block-img" src="assets/images/house-block-img-4.jpg" alt="">
-                <div class="house-rooms">2 комнаты</div>
-                <div class="house-name">Название номера</div>
-                <hr class="col align-self-start">
-                <div class="house-desc">
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                  Небольшое описание данного жилья.
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <h1 style="margin:30px 0;" class="text-center">НАШЕ МЕСТОНАХОЖДЕНИЕ</h1>
-        <div id="map" class="container">
-            <script>
-              function initMap() {
-                var uluru = {lat: 46.111530, lng: 32.900224};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 15,
-                  center: uluru
-                });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  map: map
-                });
-              }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWoJDtugY91Eo9jmfm7wlxXM4dz7n4zvg&callback=initMap">
-          </script>
-        </div>
-        <div id="rewiew-block-main">
-          <h1 class="text-center">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
-          <div class="container">
-            <div class="rewiew col-md-4 col-lg-4">
-              <div class="rewiewer-comment">«Это отзыв. Кликните здесь, чтобы отредактировать и написать хороший отзыв о ваших услугах».</div>
-              <div class="rewiewer-name">Вася Пупкин</div>
-            </div>
-            <div class="rewiew col-md-4 col-lg-4">
-              <div class="rewiewer-comment">«Это отзыв. Кликните здесь, чтобы отредактировать и написать хороший отзыв о ваших услугах».</div>
-              <div class="rewiewer-name">Оля Полякова</div>
-            </div>
-            <div class="rewiew col-md-4 col-lg-4">
-              <div class="rewiewer-comment">«Это отзыв. Кликните здесь, чтобы отредактировать и написать хороший отзыв о ваших услугах».</div>
-              <div class="rewiewer-name">Надя Дорофеева</div>
-            </div>
-          </div>
-        </div>
-        <div id="contacts-block-main">
-          <div class="container">
-            <div id="contacts-block" class="col-md-6 col-lg-6">
-              <h3>НАШИ КОНТАКТЫ</h3>
-              <p><i class="fa fa-phone" aria-hidden="true"></i> +38(050) 396 16 95</p>
-              <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@telenok.ua</p>
-              <p><i class="fa fa-map-marker" aria-hidden="true"></i> ул. Чкалова, 8, Скадовск, 75-700, Украина</p>
-            </div>
-            <div id="question-block" class="col-md-6 col-lg-6">
-              <h4>ЗАДАЙТЕ ЛЮБОЙ ВОПРОС И МЫ ОТВЕТИМ В БЛИЖАЙШЕЕ ВРЕМЯ!</h4>
-              <div class="col-md-6 col-lg-6">
-                <div class="question-input" id="question-name" contenteditable="true">Имя</div>
-                <div class="question-input" id="question-email" contenteditable="true">E-mail</div>
-                <div class="question-input" id="question-theme" contenteditable="true">Тема</div>
-              </div>
-              <div class="question-input col-md-6 col-lg-6" id="question-sms" contenteditable="true">Сообщение</div>
-            </div>
-          </div>
-        </div>
-        <div class="footer">
-        <p>Все права защищены©2017.  Shishka.ua</p>
         </div>
     </div>
-        <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+    
+    <div class="wall-list-main-block">
+        <div class="line"></div> 
+        <div class="oval">
+            <div class="content-oval content-oval-r">
+               <div class="col-mg-8 col-lg-8 col-sm-8 content-date">12/03/2017</div>
+                <div class="col-mg-3 col-lg-3 col-sm-3  content-delete">Delete</div>
+                <img class="photo-in-content-block" src="assets/images/house-block-img-1.jpg" alt="">
+                <hr>
+                <div class="comments-main">
+                    <div data-text="Leave a comment..." contenteditable="true" class="comments"></div>
+                    <button class="btn btn-send">Send</button>
+                </div>
+                <hr>
+<!--                <div class="button-like"><i class="fa fa-heart" aria-hidden="true"></i></div>-->
+                <div class="share-block">
+                    <p>Share with:</p>
+                    <div class="share-buttons">
+                        <a href="" class="share"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="oval">
+           <div class="content-oval content-oval-l">
+                <div class="col-mg-8 col-lg-8 col-sm-8 content-date">12/03/2017</div>
+                <div class="col-mg-3 col-lg-3 col-sm-3  content-delete">Delete</div>
+                <img class="photo-in-content-block" src="assets/images/house-block-img-2.jpg" alt="">
+                <hr>
+                <div class="comments-main">
+                    <div data-text="Leave a comment..." contenteditable="true" class="comments"></div>
+                    <button class="btn btn-send">Send</button>
+                </div>
+                <hr>
+<!--                <div class="button-like"><i class="fa fa-heart" aria-hidden="true"></i></div>-->
+                <div class="share-block">
+                    <p>Share with:</p>
+                    <div class="share-buttons">
+                        <a href="" class="share"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="oval">
+           <div class="content-oval content-oval-r">
+                <div class="col-mg-8 col-lg-8 col-sm-8 content-date">12/03/2017</div>
+                <div class="col-mg-3 col-lg-3 col-sm-3  content-delete">Delete</div>
+                <img class="photo-in-content-block" src="assets/images/house-block-img-3.jpg" alt="">
+                <hr>
+                <div class="comments-main">
+                    <div data-text="Leave a comment..." contenteditable="true" class="comments"></div>
+                    <button class="btn btn-send">Send</button>
+                </div>
+                <hr>
+<!--                <div class="button-like"><i class="fa fa-heart" aria-hidden="true"></i></div>-->
+                <div class="share-block">
+                    <p>Share with:</p>
+                    <div class="share-buttons">
+                        <a href="" class="share"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="" class="share"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 600px" class="line"></div>
+        <div class="wall-list-footer">
+            @photowall
+        </div>    
+       </div>
+       
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script>
-    $(function(){
-$.scrollUp();
-});
+        function handleFileSelect(evt) {
+    var file = evt.target.files; // FileList object
+    var f = file[0];
+    // Only process image files.
+    if (!f.type.match('image.*')) {
+        alert("Image or video only please....");
+    }
+    var reader = new FileReader();
+    // Closure to capture the file information.
+    reader.onload = (function(theFile) {
+        return function(e) {
+            // Render thumbnail.
+            var span = document.createElement('div');
+            span.innerHTML = ['<img class="thumb" src="', e.target.result, '" />'].join('');
+            document.getElementById('output').insertBefore(span, null);
+        };
+    })(f);
+    // Read in the image file as a data URL.
+    reader.readAsDataURL(f);
+}
+document.getElementById('file').addEventListener('change', handleFileSelect, false);
     </script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+        
 </body>
 </html>
