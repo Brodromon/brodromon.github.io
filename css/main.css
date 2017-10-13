@@ -299,7 +299,7 @@ header .search #search button {
 #banner {
   margin-top: 8vh;
   position: relative;
-  padding: 23vh 0 1vh;
+  padding: 15vh 0 1vh;
   background: url(../img/banner.png) no-repeat center center;
   background-size: cover;
 }
@@ -307,7 +307,7 @@ header .search #search button {
 #banner:before {
   content: '';
   position: absolute;
-  top: 6vh;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -325,7 +325,7 @@ header .search #search button {
   position: absolute;
   top: 21%;
   right: auto;
-  width: 96.66666666666666%;
+  width: 100%;
   color: #fff;
 }
 
@@ -465,10 +465,11 @@ header .search #search button {
 }
 
 #choose .row .feature .c-more {
+  z-index: 10;
   color: #fff;
   background: #503392;
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   bottom: 0;
   right: 0;
   height: 0;
@@ -477,10 +478,12 @@ header .search #search button {
 }
 
 #choose .row .feature .c-more h5 {
+  display: none;
   margin-top: 30px;
 }
 
 #choose .row .feature .c-more i {
+  display: none;
   color: #fff;
   font-size: .9em;
   padding: 10px;
@@ -497,6 +500,14 @@ header .search #search button {
 
 #choose .row .feature:hover .c-more {
   height: 55%;
+}
+
+#choose .row .feature:hover .c-more h5 {
+  display: block;
+}
+
+#choose .row .feature:hover .c-more i {
+  display: inline-block;
 }
 
 #about {
