@@ -2,221 +2,356 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sviatoslav Pavelko - Front End Web Developer</title>
-	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/circle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/radio.css">
-	<link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/media.css">
+     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-	<div id="switcher-main">
-		<div class="can-toggle can-toggle--size-small">
-			<input id="b" type="checkbox">
-			<label id="a" for="b">
-				<div class="can-toggle__switch" data-checked="Dark" data-unchecked="Light"></div>
-			</label>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 logo"><img src="img/logo.png" alt=""></div>
+				<nav class="col-xs-5 text-center hidden-sm hidden-xs hidden-md" id="top-menu" class="">
+					<ul>
+						<li id="f"><a href='#banner'>Home</a></li>
+						<li class='has-sub '><a href='#'>Products</a>
+						   <ul>
+							 <li class='has-sub '><a href='#'>Nassme Surname</a>
+							    <ul>
+								  <li><a href='#'>Name Surname</a></li>
+								  <li><a href='#'>Name Sussrname</a></li>
+							    </ul>
+							 </li>
+							 <li class='has-sub '><a href='#'>Name Surname</a>
+							    <ul>
+								  <li><a href='#'>Name Surname</a></li>
+								  <li><a href='#'>Name Surname</a></li>
+								  <li><a href='#'>Name Surname</a></li>
+								  <li><a href='#'>Name Surname</a></li>
+							    </ul>
+							 </li>
+						    	<li class='has-sub '><a href='#'>Name Surname</a>
+							    <ul>
+								  <li><a href='#'>Name Surname</a></li>
+								  <li><a href='#'>Name Surname</a></li>
+								  <li><a href='#'>Name Surname</a></li>
+							    </ul>
+							 </li>
+						   </ul>
+						</li>
+						<li><a href='#about'>About</a></li>
+						<li><a style="padding-right: 0" href='#contacts'>Contact</a></li>
+				  	</ul>
+				</nav>
+				
+				 <nav  class="navigation visible-xs visible-sm visible-md">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></a>
+					 <ul class="dropdown-menu">
+						<li><a href="#banner">Home</a></li>
+						<li><a href="#choose">Products</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contacts">Contact</a></li>
+						<li><input type="search"><button><i class="fa fa-search"></i></button></li>
+					 </ul>
+            		</nav>
+            
+				<div class="col-xs-2 search hidden-sm hidden-xs hidden-md">
+					<div id="search">
+						<input type="search">
+						<button><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="page-wrapper">
-  		<div id="fakeloader"></div>
-		<!-------HEADER BANNER------->
-		<section id="banner">
-			<div class="container">
-				<h6>Sviatoslav Pavelko / <i>front-end web developer</i></h6>
-				<h1>Welcome to my portfolio</h1>
-			</div>
-			<a href="#about" id="arrow-down" class="lnr lnr-chevron-down"></a>
-		</section>
-		<!---------ABOUT ME---------->
-		<section id="about">
-			<div class="container">
-				<div id="skills">
-					<h1 class="text-center"><span>About</span> Me</h1>
-				<div class="row">
-					<div class="col-md-6 text-center">
-						<img src="img/about.png" alt="">
-					</div>
-					<div class="col-md-6">
-						 Hi, I'm Sviatoslav Pavellko, and I'm a student. Studying and living in Poland. Also making adaptive web-sites with using HTML/ CSS and JavaScript. I'm looking for first job as front-end Web Developer
-					</div>
-				</div>
-				</div>
-				<hr>
-				<div id="another-skills">
-					<h2 class="text-center">My <span>Skills</span></h2>
-					<div class="container">
-						<div class="row">
-						 	<div id="progress">
-						 	<div class="p-bar col">
-						 		<div class="c100 p90 big orange">
-							  		<span>HTML5</span>
-							  		<div class="slice">
-							    			<div class="bar"></div>
-							    			<div class="fill"></div>
-							  		</div>
-								</div>
-						 	</div>
-						 	<div class="p-bar col">
-						 		<div class="c100 p80 big orange">
-							  		<span>CSS3</span>
-							  		<div class="slice">
-							    			<div class="bar"></div>
-							    			<div class="fill"></div>
-							  		</div>
-								</div>
-						 	</div>
-						 	<div class="p-bar col">
-						 		<div class="c100 p40 big orange">
-							  		<span>JS</span>
-							  		<div class="slice">
-							    			<div class="bar"></div>
-							    			<div class="fill"></div>
-							  		</div>
-								</div>
-						 	</div>
-						 	</div>
+	</header>
+	
+	<section id="banner">
+		<div class="slider">
+				<!-- Carousel -->
+			<div id="banner-slider" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#banner-slider" data-slide-to="0" class="active"></li>
+					    <li data-target="#banner-slider" data-slide-to="1"></li>
+					    <li data-target="#banner-slider" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+					    <div class="item active">
+						<!-- Static Header -->
+						<div class="header-text hidden-xs">
+						    <div class="col-md-12 text-center">
+							   <h1>
+								creative <span>design agency</span>
+							   </h1>
+							   <br>
+							   <p>
+							   	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br>
+							   	non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+							   </p>
+						    </div>
+						</div><!-- /header-text -->
+					    </div>
+					    <div class="item">
+						<div class="header-text hidden-xs">
+						    <div class="col-md-12 text-center">
+							    <h1>
+								creative <span>design agency</span>
+							   </h1>
+							   <br>
+							   <p>
+							   	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br>
+							   	non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+							   </p>
+						    </div>
 						</div>
-						<table>
-							<tr>
-								<td>
-									<img src="img/anotherskills/ps.png" alt="">
-								<div class="skill-des">
-									Adobe Photoshop
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/ai.svg" alt="">
-								<div class="skill-des">
-									Adobe Illustrator
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/as.png" alt="">
-								<div class="skill-des">
-									Adobe Assets
-								</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/anotherskills/less.svg" alt="">
-								<div class="skill-des">
-									Less
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/sass.svg" alt="">
-								<div class="skill-des">
-									Sass
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/gulp.svg" alt="">
-								<div class="skill-des">
-									Gulp
-								</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/anotherskills/brackets.svg" alt="">
-								<div class="skill-des">
-									Brackets
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/st.png" alt="">
-								<div class="skill-des">
-									Sublime Text 3
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/webstorm.svg" alt="">
-								<div class="skill-des">
-									WebStorm
-								</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/anotherskills/jquery.svg" alt="">
-								<div class="skill-des">
-									jQuery
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/angular-icon.svg" alt="">
-								<div class="skill-des">
-									AngularJS
-								</div>
-								</td>
-								<td>
-									<img src="img/anotherskills/vue.svg" alt="">
-								<div class="skill-des">
-									Vue.js
-								</div>
-								</td>
-							</tr>
-						</table>
+					    </div>
+					    <div class="item">
+						<!-- Static Header -->
+						<div class="header-text hidden-xs">
+						    <div class="col-md-12 text-center">
+							    <h1>
+								creative <span>design agency</span>
+							   </h1>
+							   <br>
+							   <p>
+							   	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br>
+							   	non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+							   </p>
+						    </div>
+						</div>
+					    </div>
+					</div>
+					<a class="left carousel-control" href="#banner-slider" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#banner-slider" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+		</div>
+	</section>
+	
+	<section id="choose">
+		<div class="container">
+			<div class="main-desc text-center" id="choose-desc">
+				<h1>why <span>choose us</span></h1>
+				<h6>
+					Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. <br>Nullam at scelerisque tellus mattis volutpat rhoncus
+				</h6>
+			</div>
+			<div class="row features">
+				<div class="feature col text-center">
+					<i class="fa fa-heart-o"></i>
+					<h5>Your title</h5>
+					<h6>
+						Duis bibendum diam <br> non erat facilaisis en ter <br>tincidunt. Duis
+					</h6>
+					<div class="c-more">
+						<h5>see more</h5>
+						<a href=""><i class="fa fa-link"></i></a>
+						<a href=""><i class="fa fa-search-plus"></i></a>
+					</div>
+				</div>
+				<div class="feature col text-center">
+					<i class="fa fa-commenting-o"></i>
+					<h5>Your title</h5>
+					<h6>
+						Duis bibendum diam <br> non erat facilaisis en ter <br>tincidunt. Duis
+					</h6>
+					<div class="c-more">
+						<h5>see more</h5>
+						<a href=""><i class="fa fa-link"></i></a>
+						<a href=""><i class="fa fa-search-plus"></i></a>
+					</div>
+				</div>
+				<div class="feature col text-center">
+					<i class="fa fa-laptop"></i>
+					<h5>Your title</h5>
+					<h6>
+						Duis bibendum diam <br> non erat facilaisis en ter <br>tincidunt. Duis
+					</h6>
+					<div class="c-more">
+						<h5>see more</h5>
+						<a href=""><i class="fa fa-link"></i></a>
+						<a href=""><i class="fa fa-search-plus"></i></a>
+					</div>
+				</div>
+				<div class="feature col text-center">
+					<i class="fa fa-star-o"></i>
+					<h5>Your title</h5>
+					<h6>
+						Duis bibendum diam <br> non erat facilaisis en ter <br>tincidunt. Duis
+					</h6>
+					<div class="c-more">
+						<h5>see more</h5>
+						<a href=""><i class="fa fa-link"></i></a>
+						<a href=""><i class="fa fa-search-plus"></i></a>
+					</div>
+				</div>
+				<div class="feature col text-center">
+					<i class="fa fa-flag-o"></i>
+					<h5>Your title</h5>
+					<h6>
+						Duis bibendum diam <br> non erat facilaisis en ter <br>tincidunt. Duis
+					</h6>
+					<div class="c-more">
+						<h5>see more</h5>
+						<a href=""><i class="fa fa-link"></i></a>
+						<a href=""><i class="fa fa-search-plus"></i></a>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!---------FEATURES---------->
-		<section id="features">
-			<div class="container">
-				<h1 class="text-center text-uppercase">why me</h1>
-				<div id="features-main">
-					<div class="col">
-						<span class="lnr lnr-rocket"></span>
-						<h3>Speed</h3>
-						<h5>High speed of making landing pages</h5>
+		</div>
+	</section>
+	
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs 12 col-md-6 about-desc main-desc">
+					<h1>About <span>us</span></h1>
+					<h6>
+						Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism <br>
+					 	Nullam at scelerisque tellus mattis volutpat rhoncus
+					 </h6>
+					<br>
+					<h5>
+						Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula <br>
+						scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum <br>
+						lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam <br>
+						tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. <br>
+						Etiam et ullamcorper dolor, a hendrerit quam.
+					</h5>
+					<br>
+					<div id="progress" class="text-uppercase">
+						<div class="skill">
+							<h6>photoshop</h6>
+							<h6 class="perc">79%</h6>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info" role="progressbar"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+							</div>
+						</div>
+						<div class="skill">
+							<h6>html/css</h6>
+							<h6 class="perc">90%</h6>
+							<div class="progress">
+								<div class="progress-bar animation progress-bar-info" role="progressbar"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+							</div>
+						</div>
+						<div class="skill">
+							<h6>javascript</h6>
+							<h6 class="perc">69%</h6>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info" role="progressbar"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+							</div>
+						</div>
+						<div class="skill">
+							<h6>wordpress</h6>
+							<h6 class="perc">92%</h6>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info" role="progressbar"
+								  aria-valuemin="0" aria-valuemax="100">
+								  </div>
+							</div>
+						</div>
 					</div>
-					<div class="col">
-						<span class="lnr lnr-smartphone"></span>
-						<h3>Adaptive</h3>
-						<h5>Adaptive making, good look on most resent devices</h5>
+				</div>
+				<img src="img/ipad.png" alt="" class="animated ipad col-xs-12">
+			</div>
+		</div>
+	</section>
+	
+	<div id="get-in-touch-hdr" class="main-desc text-center">
+			<h1>get in <span>touch</span></h1>
+			<h6>
+				Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. <br>Nullam at scelerisque tellus mattis volutpat rhoncus, 
+			</h6>
+		</div>
+	
+	<section id="get-in-touch">
+		<div id="map"></div>
+		<div class="container">
+				<div id="contacts" class="row">
+					<div class="col-xs-12 form col-md-8">
+						<form action="">
+							<input placeholder="Full Name" required type="text" class="col-xs-6">
+							<input placeholder="E-mail Adress" required type="email" list="defEmails" class="col-xs-6">
+							<datalist id="defEmails">
+							  <option value="myemail@mail.com">
+							  <option value="default@mail.mail">
+							  <option value="my-email@gmail.com">
+							</datalist>
+							<textarea placeholder="Message" required name="" class="col-xs-12"></textarea>
+							<label class="checkbox">
+								<input type="checkbox" />
+								<i></i>
+								I like your company
+							</label>
+							<button type="submit">Send</button>
+						</form>
 					</div>
-					<div class="col">
-						<span class="lnr lnr-thumbs-up"></span>
-						<h3>Quality</h3>
-						<h5>A high quality of projects</h5>
+					<div class="col-xs-12 col-md-4" id="adress">
+						<p>
+							69/A, Some Street Name <br>Your City, code 01234 <br>Country Name
+						</p>
+						<p id="numbers">
+							+880 123 456 78 98 <br>
+							+860 987 648 74 95
+						</p>
+						<p>
+							company@mail.com <br>sales@mail.com
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!----------MY WORKS--------->
-		<section id="my-works">
-			<div class="container-fluid">
-				<div class="portfolio text-center">
-					<h1>*SLIDER*</h1>
+	</section>
+	
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6">
+					<div id="copy">
+						<p>Copyright © Company. All Rights Reserved   2016</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<ul>
+						<li><a href="" class="fa fa-futbol-o"></a></li>
+						<li><a href="" class="fa fa-twitter"></a></li>
+						<li><a href="" class="fa fa-google-plus"></a></li>
+						<li><a href="" class="fa fa-facebook"></a></li>
+					</ul>
 				</div>
 			</div>
-		</section>
-		<!-----------FOOTER---------->
-		<footer id="footer">
-			<div class="container-fluid">
-				<p>Developed by Sviatoslav Pavelko (c) 2017.</p>
-				<div id="links">
-					<a href=""><i class="fa fa-facebook"></i></a>
-					<a href=""><i class="fa fa-linkedin-square"></i></a>
-					<a href=""><i class="fa fa-vk"></i></a>
-					<a href=""><i class="fa fa-github"></i></a>
-				</div>
-			</div>
-		</footer>
-	</div>
+		</div>
+	</footer>
+	
+	<script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 49.839982, lng: 24.029988},
+          zoom: 13
+        });
+      }
+
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqR-bNkmzKxvT0eB1p643X_vMhlwxPpkk&callback=initMap"
+    async defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/scroll.js"></script>
-	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-	<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #F2784B url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;background-size:120px;}</style>
-	<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
-	<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
-	<script src="js/swither.js"></script>
+     <script src="js/scroll.js"></script>
+     <script src="js/about.js"></script>
 </body>
 </html>
