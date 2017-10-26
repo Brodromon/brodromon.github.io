@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/circle.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/radio.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -190,9 +192,22 @@
 		</section>
 		<!----------MY WORKS--------->
 		<section id="my-works">
-			<div class="container-fluid">
-				<div class="portfolio text-center">
-					<h1>*SLIDER*</h1>
+			<h1 class="text-center">My <span>Works</span></h1>
+			<div class="slider">
+				<div class="slide">
+					<img src="img/upqode.png" alt="">
+					<h4><span>Up</span>Qode</h4>
+					<a href="https://github.com/Brodromon/pixel-perfect">View on github</a>
+				</div>
+				<div class="slide">
+					<img src="img/newprovedence.png" alt="">
+					<h4>New <span>Providende</span></h4>
+					<a href="https://github.com/Brodromon/new_providence">View on github</a>
+				</div>
+				<div class="slide">
+					<img src="img/oxxo.png" alt="">
+					<h4>O<span>XX</span>O</h4>
+					<a href="https://github.com/Brodromon/OXXO_1">View on github</a>
 				</div>
 			</div>
 		</section>
@@ -218,5 +233,15 @@
 	<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
 	<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
 	<script src="js/swither.js"></script>
+	<script src="js/slick.js"></script>
+	<script>
+		$('.slider').slick({
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 2500
+		});
+	</script>
 </body>
 </html>

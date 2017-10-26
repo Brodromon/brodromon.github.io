@@ -3,7 +3,6 @@
 * {
 	font-family: "Droid Sans", sans-serif;
 	font-weight: 400;
-	transition: .3s ease;
 }
 
 a {
@@ -20,6 +19,7 @@ body {
 .dark { 
 	color: #999;
 	background: #282828;
+	transition: .3s ease;
 	hr {
 		border-color: coral;
 		background: coral;
@@ -39,6 +39,15 @@ body {
 	.c100:after {
 		background: #282828;
 	}
+	#my-works {
+		.slider {
+			.slide {
+				img {
+					box-shadow: 20px 20px 10px #1e1e1e;
+				}
+			}
+		}
+	}
 	#features  { 
 		h1 {
 			color: #999;
@@ -55,7 +64,7 @@ body {
 		}
 	}
 	#footer {
-		background: #222;
+		background: #191818;
 	}
 }
 
@@ -274,8 +283,38 @@ h3 {
 		}
 	}
 }
+//-----------------------PORTFOLIO------------------------
+#my-works {
+	padding: 100px 0;
+	h1 {
+		margin-bottom: 50px;
+	}
+	.slider {
+		.slide {
+			text-align: center;
+			margin: 0 30px;
+			padding: 10px;
+			img {
+				width: 100%;
+				box-shadow: 20px 20px 10px #9f9f9f;
+				margin-bottom: 50px;
+			}
+			h4 {
+				font-size: 25px;
+			}
+			a {
+				color: #999;
+				font-size: 13px;
+				&:hover {
+					color: #444;
+				}
+			}
+		}
+	}
+}
 //-----------------------LINKS-------------------------
 #footer {
+	border-top: 3px coral solid;
 	background: #282828;
 	height: 70px;
 	line-height: 70px;
