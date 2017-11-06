@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    alert($(window).width());
     $("#header").on("click","a", function (event) {
      event.preventDefault();
         var id  = $(this).attr('href'),
