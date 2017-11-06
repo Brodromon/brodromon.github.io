@@ -254,12 +254,10 @@ a:hover {
   right: 0;
   left: 0;
 }
-#skills #skills-inner .skill:hover:before,
-#skills #skills-inner .skill:focus:before{
+#skills #skills-inner .skill:hover:before {
   background: #284682;
 }
-#skills #skills-inner .skill:hover ul,
-#skills #skills-inner .skill:focus ul{
+#skills #skills-inner .skill:hover ul {
   bottom: 25px;
 }
 #skills #skills-inner .skill ul {
@@ -394,6 +392,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 500px) {
+  #banner #banner-info {
+    margin-top: 20vh;
+  }
   #contacts #name {
     text-align: center;
   }
