@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    alert($(window).width());
     $("#header").on("click","a", function (event) {
      event.preventDefault();
         var id  = $(this).attr('href'),
@@ -9,7 +8,7 @@ $(document).ready(function(){
         document.querySelector("#open").style.right = "15px";
         document.querySelector('#close').style.right = '-45px';
     });
-    
+
     var hdr = document.querySelector('#header');
     var banner = document.querySelector('#banner');
     $(window).scroll(function() {

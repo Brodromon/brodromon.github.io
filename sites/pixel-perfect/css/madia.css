@@ -1,0 +1,9 @@
+@media screen and (max-width: 991px) {
+	body {
+		font-size: 13px;
+	}
+	#choose .row .feature  {
+		margin: 0 4px;
+	}
+			
+}

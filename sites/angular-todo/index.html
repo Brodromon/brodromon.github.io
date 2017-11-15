@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adding Styles-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--Adding scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <!--<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+    <script src="js/angular-local-storage.min.js"></script>
+    <script src="js/less.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>Test Tsaks ToDo</title>
+</head>
+<body ng-controller="fCtrl as fCtrl">
+   <div id="wrapper">
+       <div id="sidebar">
+            <h1>Main</h1>
+            <ul id="sdb">
+                <li>
+                    Overview
+                </li>
+            </ul>
+       </div>
+       <div id="main">
+           <div id="itemsMain">
+                <h1>Items</h1>
+                <div id="add">
+                    <input type="text" placeholder="Type name here..." ng-model="fCtrl.tempInput">
+                    <div id="add_btn" ng-click="fCtrl.addNew()">Add new</div>
+                </div>
+                <div id="items">
+                    <div class="task" ng-repeat="task in fCtrl.tasksArr" ng-click="fCtrl.showDetails($index)">
+                        <div class="task_name">{{task.name}}
+                            <div class="counts_com">{{task.comments.length}}</div>
+                        </div>
+                        
+                        <div class="del" ng-click="fCtrl.deleteItem($index)">Delete</div>
+                    </div>
+                </div>
+           </div>
+           <div id="commentsMain" ng-if="fCtrl.showComments">
+               <div class="task_name">{{fCtrl.taskDetails.name}} comments</div>
+               <div id="comments" ng-repeat="comment in fCtrl.taskDetails.comments track by $index">
+                   <div class="comment">{{comment}}</div>
+               </div>
+                <div id="add_com">
+                    <input type="text" placeholder="Type comment here..." ng-model="fCtrl.commentG">
+                    <button ng-click="fCtrl.addCom()">Add</button>
+                </div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

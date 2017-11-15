@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&subset=latin-ext');
+
+html, body {
+  color: #26272d;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #26272d;
+}
+.emailToGet {
+  display: inline-block;
+  width: 400px;
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 30px;
+  padding: 2px 2px 2px 10px;
+  .emailField {
+    background : inherit;
+    border: none;
+    overflow-x: auto;
+    line-height: 34px;
+    text-align: left;
+    width: 70%;
+    height : 100%;
+    float: left;
+  }
+  .buttonToGet {
+    border: none;
+    font-size: 13px;
+    color: #fff;
+    line-height: 33px;
+    width : 30%;
+    height: 100%;
+    background: #6fc754 ;
+    border-radius: 30px;
+    float: right;
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      background : #57A046;
+    }
+  }
+}
+.logo {
+  font-size: 18px;
+  text-align: center;
+  font-weight: lighter;
+  display: inline-block;
+  a {
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #000;
+    text-decoration: none;
+    transition: .2s ease;
+    &:hover {
+      background: rgba(98, 137, 255, .85);
+      color: #FFF;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.grey {
+  color: grey;
+}
+#headerMain {
+  background: url('../images/banner_background.jpg') no-repeat center center;
+  background-size: cover;
+  padding-bottom: 510px;
+  position: relative;
+  overflow: hidden;
+  #header {
+    margin: 0 auto;
+    height: 120px;
+    line-height: 120px;
+    #logoHeader {
+      display: inline-block;
+      color: black;
+
+    }
+    ul {
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          margin: 0 8px;
+          color: black;
+          text-decoration: none;
+          font-size: 15px;
+          transition: .2s ease;
+          &:hover {
+            color: #6289FF;
+          }
+        }
+      }
+
+    }
+  }
+  .getAppButton {
+    padding: 10px 20px;
+    color: #fff;
+    background: #267df4;
+    border-radius: 20px;
+    transition: .2s ease;
+    i {
+      margin-right: 10px;
+    }
+    &:hover {
+      background: #2573DE;
+    }
+  }
+  #headerBannerMain {
+    text-align: center;
+    h1 {
+      font-size: 6vh;
+      display: inline-block;
+      margin-top: 5%;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 2vh;
+      color: darkgrey;
+      margin-bottom: 20px;
+    }
+    #bannerButton {
+      font-size     : 18px;
+      border-radius : 30px;
+      display       : inline-block;
+      padding       : 20px 90px ;
+      border        : 1px darkgrey solid;
+      position      : relative;
+      overflow: hidden;
+      span {
+        position: absolute;
+        top : 17%;
+        right : 25%;
+        transition: .3s ease;
+      }
+      i {
+        position: absolute;
+        left: -15px;
+        top: 30%;
+        margin-right : 20px;
+        transition: .3s ease;
+      }
+      &:hover {
+        cursor: pointer;
+        i {
+          left : 47%;
+        }
+        span {
+          right: -100px;
+        }
+      }
+    }
+  }
+  #headerIphone {
+    transition: .3s ease;
+    position: absolute;
+    bottom: -300px;
+    left: 50%;
+    margin-left: -185px;
+  }
+}
+#contentMain {
+  overflow: hidden;
+  .contentBlock {
+    padding: 240px 0 380px;
+    position: relative;
+    overflow: hidden;
+    .contentBlockDescription {
+      h1 {
+        font-size: 52px;
+        font-weight: normal;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 17px;
+        margin-bottom :50px;
+      }
+    }
+  }
+  padding-top: 100px;
+  z-index: 5;
+  position: relative;
+  background: #fff;
+  #features {
+    .feature {
+      display: inline-block;
+      i {
+        font-size: 50px;
+        color: cornflowerblue;
+      }
+      h3 {
+        margin-top: 50px;
+        font-weight: normal;
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #ourProtectMain {
+    img {
+      right: 50%;
+      position: absolute;
+    }
+    #protectDescription {
+      margin-left : 58.33%;
+      button {
+        border: none;
+        z-index: 5;
+        position: relative;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 1px grey solid;
+        border-radius: 30px;
+        transition: .2s ease;
+        &:hover {
+          background: rgba(0, 0, 0, .3);
+          color: white;
+        }
+      }
+      #tryToHackButton {
+        margin-right: 20px;
+        overflow: hidden;
+        padding-right: 50px;
+        background: #267df4;
+        color: #fff;
+        transition: .2s ease;
+        position: relative;
+        z-index: 4;
+        i {
+          z-index: 4;
+          position: absolute;
+          top :30%;
+          right : 17%;
+          display: inline-block;
+          transition: .2s ease;
+        }
+        &:hover {
+          i {
+            right : -25px;
+          }
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+  #ourLocationMain {
+    #ourLocationDescription {
+    }
+    .map {
+      position: absolute;
+      left: 50%;
+    }
+    h5 {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    p {
+      width :100%;
+    }
+    .partners {
+      margin: 10px 30px 0 0;
+    }
+  }
+  #interfacengettinMain {
+    padding: 180px 0 100px 0;
+    background : #F4F5F7;
+    #interfaceMain {
+      padding: 140px 0 800px;
+      position: relative;
+      overflow: hidden;
+      h1 {
+        font-size: 42px;
+        letter-spacing: 2px;
+      }
+      hr {
+        background : #267DF4;
+        height: 1px;
+        width: 3%;
+      }
+      p {
+        letter-spacing: 1px;
+        margin: 20px 0;
+        color: darkgrey;
+        font-weight: 500;
+        font-size: 12px;
+      }
+      #interfacePhotos {
+        ul {
+          width: 100%;
+          position: relative;
+          li {
+            position: absolute;
+            width: 320px;
+            top: 92px;
+            box-shadow: 10px 10px 16px 0px rgba(20, 20, 224, 0.2);
+          }
+          li:nth-child(1) {
+            left: 50%;
+            margin-left: -880px;
+          }
+          li:nth-child(2) {
+            left: 50%;
+            margin-left: -530px;
+          }
+          .main-img {
+            width: 395px;
+            top: 0;
+            left: 50%;
+            margin-left: -193px;
+            box-shadow: none;
+          }
+          li:nth-child(4) {
+            right: 50%;
+            margin-right: -530px;
+          }li:nth-child(5) {
+             right: 50%;
+             margin-right: -880px;
+           }
+
+        }
+      }
+    }
+    #gettinMain {
+      text-align: center;
+      margin-top: 100px;
+      #gettinLogo {
+        span {
+          font-weight: bold;
+        }
+      }
+      h1 {
+        margin: 30px 0;
+      }
+
+    }
+  }
+  .choosePlan {
+    padding-bottom :200px;
+    background : #F4F4F5;
+    #planDescription {
+      padding-top: 70px;
+      span {
+        font-size: 12px;
+      }
+      p {
+        font-size: 14px;
+        padding-bottom: 30px;
+      }
+      h5 {
+        font-size: 20px;
+        margin-bottom : 45px;
+      }
+      #choosePlan {
+        margin-bottom: 75px;
+        position: relative;
+        display: inline-block;
+        padding: 2px;
+        border: 1px #d5d6d7 solid;
+        border-radius: 30px;
+        .choosedPlan {
+          top: 6%;
+          width : 50%;
+          height :87%;
+          background : #fff;
+          border-radius: 30px;
+          position: absolute;
+          z-index: 4;
+          box-shadow: 0 0 10px #d5d6d7;
+        }
+        button {
+          position: relative;
+          z-index: 5;
+          color: #a2a3a5;
+          margin : 8px 0;
+          font-size: 18px;
+          border: none;
+          background : transparent;
+          &:hover {
+            cursor: pointer;
+          }
+          &:active .choosePlan {
+            right : 0;
+          }
+        }
+
+      }
+    }
+    #planCards {
+      .planCard {
+        max-width: 320px;
+        position: relative;
+        background : #ebebed;
+        padding: 50px 50px 100px 50px;
+        .planCardHdr  {
+          font-size: 32px;
+          margin-bottom :34px;
+        }
+        .planCardPrice {
+          display: inline-block;
+          font-size: 11px;
+          padding: 9px 20px;
+          border: 1px #c4c4c6 solid;
+          border-radius: 30px;
+          margin-bottom :55px;
+        }
+        .planCardDescr {
+          font-size: 20px;
+          margin-bottom :50px;
+        }
+        .planCardFeature {
+          font-size: 16px;
+          margin-bottom : 30px;
+          i {
+            color: #6fc755;
+          }
+        }
+        button {
+          background : transparent;
+          position: absolute;
+          font-size: 16px;
+          width :200px;
+          height :56px;
+          line-height: 56px;
+          text-align: center;
+          border: 1px #267df4 solid;
+          color: #267df4;
+          border-radius: 50px;
+          bottom: 50px;
+          right :50%;
+          margin-right : -100px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .free {
+        background : #fff;
+      }
+    }
+  }
+  #newsletters {
+    padding: 90px 0;
+    #subscribe {
+      h1 {
+        font-size: 42px;
+        margin-bottom :50px;
+      }
+      .emailToGet {
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+      #subscribeButton {
+        border: none;
+        font-size: 13px;
+        color: #fff;
+        line-height: 33px;
+        width : 30%;
+        height: 100%;
+        background: #6fc754 ;
+        border-radius: 30px;
+        float: right;
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          background : #57A046;
+        }
+      }
+    }
+  }
+  .footer {
+    padding-bottom: 130px;
+    .socials {
+      .grey;
+      font-size: 17px;
+      margin-right: 25px;
+      &:first-child {
+        margin-left: 15px;
+      }
+    }
+    padding-top: 90px;
+    border-top: 1px #f4f4f4 solid;
+    .logo {
+      font-size: 13px;
+      margin-bottom : 37px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .contactsLinks {
+      .contactsLinksHdr {
+        color: #000;
+        font-size: 12px;
+      }
+      a {
+        display: block;
+        margin-top: 26px;
+        font-size: 16px;
+        .grey;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hidden-xs {
+  display: normal!important;
+}
+.visible-xs {
+  padding: 20px 30px;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #headerMain {
+    #header {
+      ul {
+        li {
+          a {
+            margin    : 0 4px;
+            font-size : 11px;
+          }
+        }
+      }
+    }
+  }
+
+  #contentMain {
+    #ourProtectMain {
+      #protectDescription {
+        button {
+          margin : 5px 0;
+        }
+      }
+    }
+
+    .choosePlan {
+      #planDescription {
+        text-align: center;
+      }
+      #planCards {
+        .planCard {
+          max-width : 500px;
+        }
+      }
+    }
+
+    #ourProtectMain {
+      img {
+      }
+    }
+  }
+}
+@media screen and (max-width: 1136px) {
+  .hidden-xs {
+    display: none;
+  }
+  .visible-xs {
+    display: block ;
+    position: relative;
+    .dropdown-toggle {
+      font-size: 50px;
+    }
+    .dropdown-menu {
+      width: 100%;
+      padding: 0;
+      li {
+        a {
+          text-align: center;
+          font-size :22px;
+          padding: 30px 0;
+          display: inline-block;
+          width :100%;
+          border-bottom: 1px #D6D5D4 solid;
+        }
+        .getAppButton {
+          border-bottom: none;
+        }
+      }
+    }
+    #logoHeaderMin {
+      font-size: 31px;
+      position: absolute;
+      right : 50%;
+      margin-right : -141.5px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #contentMain {
+    .contentBlock {
+      padding: 150px 0 50px;
+    }
+    #ourProtectMain {
+      img {
+        position: inherit;
+        margin-bottom: 50px;
+      }
+      #protectDescription {
+        margin-left: 0;
+      }
+    }
+
+    #ourLocationMain {
+      .map {
+        margin-top: 50px;
+        position: inherit;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .emailToGet {
+    width :90%;
+  }
+}
+
