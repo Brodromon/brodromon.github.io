@@ -214,6 +214,13 @@ a:hover {
 #about #about-inner p {
   margin-bottom: 30px;
 }
+#about #about-inner p span {
+    background: red;
+    color: #fff;
+    padding: 0 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
 #about #about-inner .progress {
   height: 4px;
   padding: 1px 0;
@@ -233,12 +240,9 @@ a:hover {
   right: 0;
 }
 #skills #skills-inner .skill {
-  padding: 30px 5px;
+  padding: 60px 5px;
   overflow: hidden;
   background: #fff;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 0;
   position: relative;
   transition: .3s ease;
@@ -258,7 +262,7 @@ a:hover {
   background: #284682;
 }
 #skills #skills-inner .skill:hover ul {
-  bottom: 25px;
+  bottom: 10px;
 }
 #skills #skills-inner .skill ul {
   padding: 0;
@@ -276,9 +280,11 @@ a:hover {
 }
 #skills #skills-inner .skill .skill-inner {
   text-align: center;
+    height: 50px;
 }
 #skills #skills-inner .skill .skill-inner h2 {
-  margin: 0 0 20px 0;
+  margin: 0;
+    line-height: 50px;
 }
 #work {
   padding: 100px 0;
