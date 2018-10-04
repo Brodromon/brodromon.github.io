@@ -32,7 +32,7 @@ a:hover {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 5;
+  z-index: 6;
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.9);
@@ -92,7 +92,7 @@ a:hover {
   background-repeat: no-repeat;
   padding-bottom: 100px;
   padding-top: 70px;
-  z-index: 1;
+  z-index: 2;
 }
 #banner hr {
   margin: 0;
@@ -111,7 +111,7 @@ a:hover {
   left: 0;
   content: '';
   background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+  z-index: 3;
 }
 #banner #header {
   right: 0;
@@ -120,14 +120,14 @@ a:hover {
   transition: .5s ease;
   background: rgba(255, 255, 255, 0);
   position: fixed;
-  z-index: 10;
+  z-index: 11;
   height: 70px;
   line-height: 70px;
 }
 #banner #header #logo {
   font-family: "Pinyon Script", sans-serif;
   color: #fff;
-  z-index: 10;
+  z-index: 11;
   position: relative;
   font-size: 30px;
   display: inline-block;
@@ -155,7 +155,7 @@ a:hover {
 }
 #banner #banner-info {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   height: 50vh;
   margin-top: 25vh;
   color: #fff;
@@ -200,7 +200,7 @@ a:hover {
 }
 #banner .lnr {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   color: #fff;
   bottom: 0;
   width: 50px;
@@ -243,13 +243,13 @@ a:hover {
   padding: 60px 5px;
   overflow: hidden;
   background: #fff;
-  z-index: 0;
+  z-index: 1;
   position: relative;
   transition: .3s ease;
   border: 1px #f7f7f7 solid;
 }
 #skills #skills-inner .skill:before {
-  z-index: 2;
+  z-index: 3;
   transition: .3s ease;
   content: '';
   position: absolute;
@@ -268,7 +268,7 @@ a:hover {
   padding: 0;
   width: 100%;
   transition: .3s ease;
-  z-index: 3;
+  z-index: 4;
   text-align: center;
   position: absolute;
   bottom: -130px;
@@ -290,7 +290,7 @@ a:hover {
   padding: 100px 0;
 }
 #work #portfolio .work {
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
   padding: 10px;
   position: relative;
@@ -322,7 +322,7 @@ a:hover {
   height: 120px;
   transition: .5s ease;
   opacity: 0;
-  z-index: 3;
+  z-index: 4;
   position: absolute;
   bottom: -50px;
   right: 10px;
