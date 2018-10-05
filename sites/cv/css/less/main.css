@@ -379,39 +379,3 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
   height: 20px;
 }
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #banner #banner-info {
-    text-align: center;
-    margin-top: 28vh;
-  }
-  .section-num h2 {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  #contacts ul li {
-    font-size: .89em;
-  }
-}
-@media screen and (max-width: 500px) {
-  #banner #banner-info {
-    margin-top: 20vh;
-  }
-  #contacts #name {
-    text-align: center;
-  }
-  #contacts ul {
-    margin: 10px 0;
-    height: inherit;
-    line-height: 23px;
-    text-align: center;
-  }
-  #contacts ul li {
-    font-size: .8em;
-    margin: 0 7px;
-  }
-}

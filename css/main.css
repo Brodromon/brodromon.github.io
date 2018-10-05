@@ -1,15 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600,700');
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+body {
+    background: #ededed;
+    margin: 0;
+    padding: 0;
 }
 
-#portfolio li {
+/* #portfolio li {
   list-style: none;
 }
 body {
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background: #999;
 }
   ul#portfolio {
   padding: 0;
@@ -33,4 +40,110 @@ body {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   max-width: 100%;
+} */
+
+.header {
+    background: #fff;
+    height: 130px;
+    box-shadow: 0 0 10px #141414;
+}
+.header h1 {
+    margin: 0;
+    line-height: 130px;
+}
+.header h1 a {
+    font-family: 'Pinyon Script', sans-serif;
+    color: #000;
+    font-size: 55px;
+}
+.header h1 a:hover {
+    text-decoration: none;
+    color: #494949;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+.wrapper__heading {
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+hr {
+    background: #fff;
+    margin-bottom: 40px;
+}
+.wrapper__heading__img {
+    width: 50%;
+}
+.p__img {
+    overflow: hidden;
+}
+.p__img img {
+    width: 100%;
+    border: 3px #999 solid;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.p__img::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border-radius: 5px;
+    transition: .2s linear;
+}
+.p__img:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+.p__img:hover .img__link-t {
+    top: 50%;
+}
+.img__link-t {
+    transition: .2s ease;
+    font-size: 120px;
+    color: #bababa;
+    opacity: .7;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -67px;
+}
+
+#contacts {
+    margin-top: 20px;
+    background: #f7f7f7;
+  padding: 30px 0;
+  border-top: 3px #e8e8e8 solid;
+}
+#contacts #name {
+  font-size: 13px;
+  height: 60px;
+}
+#contacts ul {
+  text-align: right;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+}
+#contacts ul li {
+  font-size: 15px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+#contacts ul li a {
+  color: #2d2d2d;
+}
+#contacts ul li span {
+  font-weight: bold;
+  color: #2d2d2d;
+}
+#footer {
+  background: rgba(0, 0, 0, 0.5);
+  height: 20px;
 }
