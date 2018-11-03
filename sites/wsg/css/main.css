@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+body {margin: 0;padding: 0;font-family: sans-serif; font-size: 13px;}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  z-index: 50;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 0 0 4px 4px;
+  border: 1px #333 solid;
+  border-top-color: transparent;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  position: relative;
+  display: block;
+  padding: 5px 20px;
+  color: #333;
+  font-size: .9em;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.menu li a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: #249AC6;
+  transition: 0.5s;
+}
+.menu li a:hover {
+  color: #fff;
+}
+.menu li a:hover::before {
+  animation: animate .5s linear forwards; 
+}
+.menu li a span {
+    color: inherit;
+    margin-left: 7px;   
+}
+@keyframes animate {
+  0% {
+    top: calc(50% - 2px);
+    left: -100%;
+    height: 4px;
+    z-index: 1;
+  }
+  50% {
+    top: calc(50% - 2px);
+    left: 0;
+    height: 4px;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+#page-nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: 0;
+    margin-top: -221px;
+    color: #fff;
+    z-index: 50;
+    background: rgba(0, 0, 0, .5); 
+    padding: 0;
+    border-radius: 0 2px 2px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#page-nav li {
+    list-style: none;
+}
+#page-nav li a {
+    margin: 30px 0;
+    padding: 10px 40px;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#page-nav li a:hover {
+    padding-right: 38px;
+    border-right: 2px #fff solid;
+}
+.section-hdr {
+    text-align: center;
+    z-index: 9;
+    position: relative;
+}
+div.section {
+    border-bottom: 2px #249AC6 solid;
+}
+.section-hdr h1 {
+    padding-top: 5vh;
+    font-size: 4em;
+    color: #249AC6;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section-hdr h3 {
+    padding-top: 3vh;
+    font-size: 3em;
+    color: #249AC6;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section-hdr hr {
+    margin-bottom: 5vh;
+    width: 30%;
+    border: 4px #333 dashed;
+    border-top: 0;
+}
+div.section:nth-of-type(1) {
+    background: url('../img/topBannerBg.png') #B4A890;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+div.section:nth-of-type(1)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .3;
+}
+  
+div.section:nth-of-type(2) {
+    
+}
+#banner__arrow-down {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -15px;
+}
+#banner__arrow-down:hover {
+    text-decoration: none;
+    color: #fff;
+}
+#banner-inst-info {
+    color: #fff;
+    padding: 30vh 0 45vh;
+    text-align: right;
+    z-index: 0;
+    position: relative;
+}
+#banner-inst-info h4 #logo {
+    height: 35px;
+    padding-bottom: 7px;
+}
+#banner-inst-info h4,
+#banner-inst-info h1,
+#banner-inst-info h5 {
+    text-transform: uppercase;
+    text-align: right;
+    background: #249AC6;
+    padding: 5px 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+#banner-inst-info h4 {
+    line-height: 44px;
+    font-size: 1.5em;
+}
+#banner-inst-info h1 {
+    font-size: 4.5em;
+}
+#banner-inst-info h5 {
+    font-size: 1.2em;
+    margin-right: 4px;
+}
+#why-facts {
+    left: 0;
+    right: 0;
+    bottom: -100vh;
+    position: absolute;
+}
+#facts {
+    padding: 50px 0;
+    background: #249AC6;
+}
+.facts__card {
+    color: #fff; 
+    text-align: center;
+}
+.facts__card h3 {
+    font-size: 2.6em;
+    font-weight: 600;
+}
+.facts__card h3 span {
+    font-weight: normal;
+    font-size: .5em;
+}
+.facts__card p {
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+}
+#partners {
+    padding-bottom: 5vh;
+}
+#contact {
+    height: 87vh;
+    padding-bottom: 50px;
+    background: url('../img/budC.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(255,255,255, 1), 
+                                rgba(255,255,255,1), 
+                                rgba(0, 0, 0, 0), 
+                                rgba(0, 0, 0, 0), 
+                                rgba(0, 0, 0, 0), 
+                                rgba(0, 0, 0, 0), 
+                                rgba(0, 0, 0, 0))
+}
+#contact__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -250px;
+    background: #fff;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: 5;
+    box-shadow: 0 0 10px #249AC6;
+}
+#contact__form form {
+    padding-top: 70px;
+}
+#contact__form form p {
+    margin: 5px 0;
+    text-align: left;
+    padding-left: 20%;
+}
+#contact__form form input {
+    width: 60%;
+    border: 1px #249AC6 solid;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+}
+#contact__form form textarea {
+    width: 60%;
+    border: 1px #249AC6 solid;
+    border-radius: 3px;
+    min-height: 100px;
+    padding: 5px;
+}
+#contact__form form button {
+    background: #249AC6;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+}
+#adres {
+    height: 10vh;
+    line-height: 10vh;
+    background: #f7f7f7;
+    border-top: 5px #999 solid;
+}
+#adres h5 {
+    margin: 0;
+    font-size: 1.1em;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#adres ul {
+    margin: 0;
+    padding: 0;
+}
+#adres ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 10px;
+}
+#adres ul li span {
+    font-weight: bold;
+}
+#adres ul li a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+#copy {
+    text-align: center; 
+    height: 30px;
+    background: #666;
+    height: 3vh;
+    line-height: 3vh;
+}
+#copy h6 {
+    margin: 0;
+    line-height: 30px;
+    color: #fff;
+    font-size: .9em;
+}
