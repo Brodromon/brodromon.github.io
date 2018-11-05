@@ -130,7 +130,7 @@ div.section {
     border-top: 0;
 }
 div.section:nth-of-type(1) {
-    background: url('../img/topBannerBg.png') #B4A890;
+    background: url('../img/topBannerBg-min.png') #B4A890;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -161,9 +161,12 @@ div.section:nth-of-type(2) {
     text-decoration: none;
     color: #fff;
 }
+.section:nth-child(1) {
+    padding: 41.5vh 0;
+}
 #banner-inst-info {
     color: #fff;
-    padding: 30vh 0 45vh;
+    height: 17vh;
     text-align: right;
     z-index: 0;
     position: relative;
@@ -192,6 +195,16 @@ div.section:nth-of-type(2) {
 #banner-inst-info h5 {
     font-size: 1.2em;
     margin-right: 4px;
+}
+.info__card {
+    padding: 60px 0;
+    text-align: center;
+}
+.info__card .img {
+    font-size: 4em;
+}
+.info__card p {
+    font-size: 3em;
 }
 #why-facts {
     left: 0;
@@ -223,6 +236,10 @@ div.section:nth-of-type(2) {
 }
 #partners {
     padding-bottom: 5vh;
+}
+.partner {
+    text-align: center;
+    line-height: 72px;
 }
 #contact {
     height: 87vh;
@@ -298,9 +315,10 @@ div.section:nth-of-type(2) {
     height: 10vh;
     line-height: 10vh;
     background: #f7f7f7;
-    border-top: 5px #999 solid;
+    border-top: 3px #249AC6 solid;
 }
 #adres h5 {
+    text-align: center;
     margin: 0;
     font-size: 1.1em;
     position: relative;
@@ -327,13 +345,106 @@ div.section:nth-of-type(2) {
 #copy {
     text-align: center; 
     height: 30px;
-    background: #666;
+    background: #249AC6;
     height: 3vh;
     line-height: 3vh;
 }
 #copy h6 {
     margin: 0;
-    line-height: 30px;
+    line-height: 3vh;
+    font-weight: bold;
     color: #fff;
     font-size: .9em;
+}
+
+
+
+@media screen and (max-width: 769px) {
+    body {
+        font-size: 11px;
+    }
+    .info__card {
+        padding: 0;
+    }
+    #facts {
+        padding: 30px 0;
+    }
+    .partner {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 415px) {
+    body {
+        font-size: 9px;
+    }
+    .menu {
+        display: none;
+    }
+    #banner-inst-info h1 {
+        font-size: 3.4em;
+        padding: 10px 20px;
+    }
+    #banner-inst-info h4 {
+        padding: 0 20px;
+    }
+    .section-hdr h1 {
+        padding-top: 1vh;
+        font-size: 3.3em;
+    }
+    .section-hdr h3 {
+        font-size: 2.5em;
+    }
+    .section-hdr hr {
+        width: 40%;
+    }
+    .info__card p {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    #facts {
+        padding: 15px 0;
+    }
+    #b p {
+        display: none;
+    }
+    #adres {
+        line-height: 7vh;
+    }
+    #adres h5 {
+        margin-top: 6px;
+    }
+    #adres ul li {
+        font-size: 1.15em;
+        margin: 0 5px;
+    }
+    #contact__form form p {
+        font-size: 1.25em;
+    }
+    #contact__form form button {
+        font-size: 2em;
+        padding: 7px 50px;
+    }
+    #copy h6 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #banner-inst-info h1 {
+        font-size: 3.1em;
+    }
+    #contact__form {
+        height: 450px;
+        width: 450px;
+        margin-top: -170px;
+        margin-left: -225px;
+    }
+    #contact__form form {
+        padding-top: 45px;
+    }
+    #adres ul li {
+        margin: 0 4px;
+        font-size: 1.05em;
+    }
 }
