@@ -241,6 +241,58 @@ div.section:nth-of-type(2) {
     text-align: center;
     line-height: 72px;
 }
+.section:nth-child(3) {
+    background: url('../img/actualBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section:nth-child(3) .section-hdr h1 {
+    color: #fff;
+}
+.actual__list {
+    padding-top: 15vh;
+}
+.actual__list .slick-slide{
+    margin: 0 20px;
+}
+.actual__list__item {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 4px;
+    box-shadow: 4px 0 10px #999;
+}
+.actual__list__item h3{
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+}
+.actual__list__item hr{
+    width: 30%;
+    height: 2px;
+    background: #666;
+}
+.actual__btn {
+    position: absolute;
+    background: #249AC6;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.actual__btn:hover {
+    background: #2b87a8;
+    text-decoration: none;
+    color: #fff;
+}
+.actual__list__item p{
+    text-align: center;
+}
 #contact {
     height: 87vh;
     padding-bottom: 50px;
