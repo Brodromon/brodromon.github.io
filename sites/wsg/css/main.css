@@ -519,7 +519,7 @@ div.section:nth-of-type(2) {
 }
 
 
- @media (max-width: 1036px) {
+ @media (max-width: 1081px) {
      #adres {
          line-height: 1vh;
      }
@@ -573,6 +573,11 @@ div.section:nth-of-type(2) {
         margin-bottom: 50px;
     }
 }
+@media (min-height: 1079px) {
+    body {
+        font-size: 15px;
+    }
+}
 @media (min-height: 1199px) {
     #inst_about p {
         font-size: 1.2em;
@@ -584,17 +589,11 @@ div.section:nth-of-type(2) {
     }
 }
 @media (min-height: 1599px) {
-    body {
-        font-size: 12px;
-    }
     .section:nth-child(2) #why__slider,
     .section:nth-child(2) #inst_about {
         width: 100%;
     }
     .section:nth-child(2) #why__slider {
         margin-bottom: 100px;
-    }
-    #inst_about p {
-        font-size: 2em;
     }
 }
