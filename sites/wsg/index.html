@@ -16,12 +16,41 @@
 </head>
 <body>
         <ul class="menu">
-                <li><a href="#">O Instytucie</a></li>
-                <li><a href="#">Struktura<span class="lnr lnr-chevron-down"></span></a></li>
-                <li><a href="#">Oferta Edukacyjna<span class="lnr lnr-chevron-down"></span></a></li>
-                <li><a href="#">Programy Wspolpracy</a></li>
-                <li><a href="#">Rekrutacja<span class="lnr lnr-chevron-down"></span></a></li>
-                <li><a href="#">Kontakt<span class="lnr lnr-chevron-down"></span></a></li>
+                <li class="has-dropdown">
+                    <a class="menu__link" href="#">O Instytucie<span class="lnr lnr-chevron-down"></span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Lista studentow</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a class="menu__link" href="#">Struktura<span class="lnr lnr-chevron-down"></span></a>
+                    <ul class="dropdown">
+                            <li><a href="#">Polska</a></li>
+                            <li><a href="#">Ukraina</a></li>
+                        </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a class="menu__link" href="#">Oferta Edukacyjna<span class="lnr lnr-chevron-down"></span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Struktura Szkoly</a></li>
+                        <li><a href="#">Kursy</a></li>
+                        <li><a href="#">Praktyki instaze</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu__link" href="#">Programy Wspolpracy</a></li>
+                <li class="has-dropdown">
+                    <a class="menu__link" href="#">Rekrutacja<span class="lnr lnr-chevron-down"></span></a>
+                    <ul class="dropdown">
+                        <li>Hello</li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a class="menu__link" href="#">Kontakt<span class="lnr lnr-chevron-down"></span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Proces rekrutacji</a></li>
+                        <li><a href="#">Wymagane documenty</a></li>
+                    </ul>
+                </li>
               </ul>
         <div id="page-wrapper">
             
@@ -48,15 +77,18 @@
                             <div  class="inst-info__cards">
                                 <div class="info__card card1">
                                     <div class="img"><i class="fas fa-users"></i></div>
-                                    <p>Programy stependyalne</p>
+                                    <h5>Programy stependyalne</h5>
+                                    <p>Różnorodne programy stypedndialne</p>
                                 </div>
                                 <div class="info__card card2">
                                     <div class="img"><i class="fas fa-book-open"></i></div>
-                                    <p>Uznawalność dyplomu</p>
+                                    <h5>Uznawalność dyplomu</h5>
+                                    <p>Uznawalność dyplomu we wszystkich krajach</p>
                                 </div>
                                 <div class="info__card card3">
                                     <div class="img"><i class="fas fa-users"></i></div>
-                                    <p>Programy stependyalne</p>
+                                    <h5>Status studenta</h5>
+                                    <p>Status studenta europejskiej uczelni</p>
                                 </div>
                             </div>
                         </div>
@@ -179,11 +211,11 @@
                 <div id="adres">
                         <div class="container">
                                 <div class="row justify-content-between">
-                                    <div class="col-sm-12 col-xl-4">
+                                    <div class="adres__name col-sm-12 col-xl-3">
                                         <h5>Biuro Rekrutacji Międzynarodowej <br>
                                             Wyższa Szkoła Gospodarki w Bydgoszczy</h5>
                                     </div>
-                                    <div class="col-sm-12 col-xl-8">
+                                    <div class="adres__cont col-sm-12 col-xl-9">
                                         <ul class="row">
                                             <li class="col-4">
                                                 <span>Adres: </span>
@@ -225,6 +257,7 @@
             });
             $('.actual__list').slick({
                 dots: true,
+                arrows: false,
                 infinite: true,
                 autoplay: true,
                 slidesToShow: 3,
