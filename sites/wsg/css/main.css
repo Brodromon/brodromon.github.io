@@ -364,10 +364,22 @@ div.section:nth-of-type(2) {
 }
 .actual__list__item {
     background: #fff;
-    padding: 30px 20px;
     border-radius: 4px;
     box-shadow: 4px 0 10px #999;
+    
+}
+.actual__list__item a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px;
     border-bottom: 2px #249AC6 solid;
+    transition: .2s ease;
+}
+.actual__list__item a:hover {
+    text-decoration: none;
+    padding-bottom: 22px;
+    border-bottom: 10px #249AC6 solid;
 }
 .actual__list__item h3{
     text-align: center;
@@ -378,6 +390,10 @@ div.section:nth-of-type(2) {
     width: 30%;
     height: 2px;
     background: #666;
+}
+.actual__list__item p{
+    text-align: center;
+    color: #666;
 }
 .actual__btn {
     position: absolute;
@@ -397,9 +413,7 @@ div.section:nth-of-type(2) {
     text-decoration: none;
     color: #fff;
 }
-.actual__list__item p{
-    text-align: center;
-}
+
 #contact {
     height: 87vh;
     padding-bottom: 50px;
@@ -574,6 +588,9 @@ div.section:nth-of-type(2) {
     }
 }
 @media (min-height: 1079px) {
+    #banner-inst-info h1 {
+        font-size: 3.8em;
+    }
     body {
         font-size: 15px;
     }
