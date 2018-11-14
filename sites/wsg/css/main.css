@@ -203,7 +203,7 @@ div.section {
     border-bottom: 2px #249AC6 solid;
 }
 .section-hdr h1 {
-    padding-top: 5vh;
+    padding-top: 6vh;
     font-size: 4em;
     color: #249AC6;
     font-weight: bold;
@@ -554,9 +554,6 @@ div.section:nth-of-type(2) {
 @media screen and (max-width: 1367px) {
     body {
         font-size: 11px;
-    }
-    .section-hdr h1 {
-        padding-top: 6vh;
     }
     #facts {
         padding: 23px 0;
