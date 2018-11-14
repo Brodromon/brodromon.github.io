@@ -10,7 +10,7 @@ body {margin: 0;padding: 0;font-family: sans-serif; font-size: 13px;}
   padding: 0;
   position: absolute;
   z-index: 50;
-  background: rgba(255, 255, 255, .7);
+  background: #249AC6;
   border-radius: 0 0 4px 4px;
   border: 1px #333 solid;
   border-top-color: transparent;
@@ -22,9 +22,10 @@ body {margin: 0;padding: 0;font-family: sans-serif; font-size: 13px;}
 .menu__link {
   position: relative;
   display: block;
-  padding: 5px 0;
-  color: #333;
-  font-size: .9em;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -39,11 +40,11 @@ body {margin: 0;padding: 0;font-family: sans-serif; font-size: 13px;}
   left: -100%;
   width: 100%;
   height: 4px;
-  background: #249AC6;
+  background: #fff;
   transition: 0.5s;
 }
 .menu__link:hover {
-  color: #fff;
+  color: #249AC6;
   text-decoration: none;
 }
 .menu__link:hover::before {
@@ -53,7 +54,7 @@ body {margin: 0;padding: 0;font-family: sans-serif; font-size: 13px;}
     color: inherit;
     margin-left: 7px;
     position: absolute;
-    top: 8px;
+    top: 13px;
 }
 @keyframes navAnimate {
   0% {
@@ -218,7 +219,7 @@ div.section {
 .section-hdr hr {
     margin-bottom: 5vh;
     width: 30%;
-    border: 4px #333 dashed;
+    border: 2px #666 dashed;
     border-top: 0;
 }
 div.section:nth-of-type(1) {
@@ -568,6 +569,28 @@ div.section:nth-of-type(2) {
     body {
         font-size: 10px;
     }
+    #contact__form {
+        height: 450px;
+        width: 450px;
+        margin-top: -175px;
+        margin-left: -225px;
+    }
+    #contact__form form {
+        padding-top: 55px;
+    }
+    .section-hdr h1 {
+        padding-top: 6vh;
+    }
+    #facts {
+        padding: 20px 0;
+    }
+    .info__card {
+        padding: 40px 0;
+    }
+    .info__card .img {
+        font-size: 140px;
+    }
+
 }
 @media only screen and (max-width: 1025px) {
     .section:nth-child(2) #why__slider,
@@ -599,6 +622,7 @@ div.section:nth-of-type(2) {
     #inst_about p {
         font-size: 1.2em;
     }
+    
 }
 @media (min-height: 1400px) {
     #inst_about p {

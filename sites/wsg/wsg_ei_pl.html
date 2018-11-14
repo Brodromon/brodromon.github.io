@@ -17,17 +17,20 @@
 <body>
         <ul class="menu row justify-content-center">
                 <li class="has-dropdown col-2">
-                    <a class="menu__link has_chevron" href="#">O Instytucie<span class="lnr lnr-chevron-down"></span></a>
                     <ul class="dropdown">
-                        <li><a href="#">Historii studentow</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown col-2">
-                    <a class="menu__link has_chevron" href="#">Struktura<span class="lnr lnr-chevron-down"></span></a>
-                    <ul class="dropdown">
+                        <li><a href="#">Struktura szkoly</a></li>
+                        <!-- <ul class="dropdown">
                             <li><a href="#">Polska</a></li>
                             <li><a href="#">Ukraina</a></li>
-                        </ul>
+                        </ul> -->
+                    </ul>
+                    <a class="menu__link has_chevron" href="#">O Instytucie<span class="lnr lnr-chevron-down"></span></a>
+                </li>
+                <li data-menuanchor="aktual" class="has-dropdown col-2">
+                    <a class="menu__link has_chevron" href="#aktual">Aktualnosci</a>
+                </li>
+                <li class="has-dropdown col-2">
+                    <a class="menu__link has_chevron" href="#">Historii studentow</a>
                 </li>
                 <li class="has-dropdown col-2">
                     <a class="menu__link has_chevron" href="#">Oferta Edukacyjna<span class="lnr lnr-chevron-down"></span></a>
@@ -37,10 +40,6 @@
                         <li><a href="#">Praktyki instaze</a></li>
                     </ul>
                 </li>
-                <li class="col-2"><a class="menu__link" href="#">Programy Wspolpracy</a></li>
-                <li class="col-2">
-                    <a class="menu__link has_chevron" href="#">Kontakt</a>
-                </li>
                 <li class="has-dropdown col-2">
                     <a class="menu__link has_chevron" href="#">Rekrutacja<span class="lnr lnr-chevron-down"></span></a>
                     <ul class="dropdown">
@@ -48,6 +47,10 @@
                         <li><a href="#">Wymagane documenty</a></li>
                     </ul>
                 </li>
+                <li data-menuanchor="kontakt" class="col-2">
+                    <a class="menu__link has_chevron" href="#kontakt">Kontakt</a>
+                </li>
+                
               </ul>
         <div id="page-wrapper">
             
@@ -69,7 +72,7 @@
                 </div>
                 <!-- <a id="banner__arrow-down" href="#"><span class="lnr lnr-chevron-down"></span></a> -->
             </div>
-            <div id='a' class="section" data-anchor="struktura">
+            <div id='a' class="section" data-anchor="skruktura">
                     <div class="col-12 section-hdr">
                             <h1>dlaczego wyższa szkoła gospodarki</h1>
                             <hr>
@@ -263,15 +266,15 @@
                                     </div>
                                     <div class="adres__cont col-sm-12 col-xl-9">
                                         <ul class="row">
-                                            <li class="col-4">
+                                            <li class="col-6">
                                                 <span>Adres: </span>
                                                 <a href="#">85-229 Bydgoszcz, ul. Garbary 2</a>
                                             </li>
-                                            <li class="col-4">
+                                            <li class="col-3">
                                                 <span>E-mail: </span>
                                                 <a href="mailto:study@byd.pl">study@byd.pl</a>
                                             </li>
-                                            <li class="col-4">
+                                            <li class="col-3">
                                                 <span>Tel: </span>
                                                 <a href="tel+48525670792">+48 52 5670792</a>
                                             </li>
@@ -334,7 +337,7 @@
                 }]
             });
             $('#page-wrapper').fullpage({
-                anchors: ['banner', 'struktura', 'aktual', 'kontakt'],
+                anchors: ['banner', 'skruktura', 'aktual', 'kontakt'],
                 menu: '#page-nav',
                 css3: true,
                 scrollHorizontally: true,
