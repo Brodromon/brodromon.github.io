@@ -72,7 +72,7 @@
                 </div>
                 <!-- <a id="banner__arrow-down" href="#"><span class="lnr lnr-chevron-down"></span></a> -->
             </div>
-            <div id='a' class="section" data-anchor="skruktura">
+            <div class="section" data-anchor="skruktura">
                     <div class="col-12 section-hdr">
                             <h1>dlaczego wyższa szkoła gospodarki</h1>
                             <hr>
@@ -146,21 +146,6 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="section-hdr">
-                                <h3>Nasze partnerzy</h3>
-                                <hr>
-                            </div>
-                            <div id="partners">
-                                    <div class="container">
-                                            <div class="row">
-                                                <div class="col partner"><img src="img/1.png" alt=""></div>
-                                                <div class="col partner"><img src="img/2.png" alt=""></div>
-                                                <div class="col partner"><img src="img/3.png" alt=""></div>
-                                                <div class="col partner"><img src="img/4.png" alt=""></div>
-                                                <div class="col partner"><img src="img/5.png" alt=""></div>
-                                            </div>
-                                        </div>
-                            </div>
                 </div>
             </div>
             <div class="section" data-anchor="aktual">
@@ -241,6 +226,21 @@
                     <a href='#' class="actual__btn">Lista aktualnosci</a>
                 </div>
             </div>
+            <div class="section" data-anchor="partners" id="prtn">
+                    <div class="section-hdr">
+                        <h1>Nasze partnerzy</h1>
+                        <hr>
+                    </div>
+                    <div class="container-fluid" id="prtn__list">
+                        <h3>Wybierz kraj</h3>
+                        <select v-model="selectedContry" id="prtn__contry">
+                            <option v-for="partner in partners" v-bind:value="partner.prtnInst">{{partner.prtnContry}}</option>
+                        </select>
+                        <ul id="prtn__list__ul">
+                            <li id="prtn__list__item" v-for="item in selectedContry">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
             <div class="section" data-anchor="kontakt">
                 <div id="contact">
                     <div class="section-hdr">
@@ -298,6 +298,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
     <script>
         $(document).ready(function() {
             $('.inst-info__cards').slick({
