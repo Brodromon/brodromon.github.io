@@ -348,7 +348,7 @@ div.section:nth-of-type(2) {
     padding: 10px;
     font-size: 1.5em;
     border-radius: 10px;
-    box-shadow: 4px 2px 4px #999;
+    box-shadow: 4px 2px 4px #888;
 }
 #prtn__contry option {
     font-size: 1em;
