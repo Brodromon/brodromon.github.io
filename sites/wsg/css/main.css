@@ -344,7 +344,7 @@ div.section:nth-of-type(2) {
     margin: 0;
 }
 #prtn__country {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     font-size: 1.5em;
     border-radius: 10px;
@@ -352,6 +352,9 @@ div.section:nth-of-type(2) {
 }
 #prtn__country option {
     font-size: 1em;
+}
+#prtn__list {
+    text-align: center;
 }
 #prtn__list h3 {
     text-align: center;
@@ -375,7 +378,8 @@ div.section:nth-of-type(2) {
     padding: 3px 0
 }
 .section:nth-child(3) {
-    background: url('../img/actualBG.jpg');
+    background-image: url('../img/actualBG.jpg');
+    background-color: linear-gradient(#8cb6de, #fff);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
