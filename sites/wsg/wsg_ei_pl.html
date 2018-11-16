@@ -233,11 +233,11 @@
                     </div>
                     <div class="container-fluid" id="prtn__list">
                         <h3>Wybierz kraj</h3>
-                        <select v-model="selectedContry" id="prtn__contry">
+                        <select v-model="selectedCountry" id="prtn__country">
                             <option v-for="partner in partners" v-bind:value="partner.prtnInst">{{partner.prtnContry}}</option>
                         </select>
                         <ul id="prtn__list__ul">
-                            <li id="prtn__list__item" v-for="item in selectedContry">{{item}}</li>
+                            <li id="prtn__list__item" v-for="item in selectedCountry">{{item}}</li>
                         </ul>
                     </div>
                 </div>
@@ -339,7 +339,7 @@
                 }]
             });
             $('#page-wrapper').fullpage({
-                anchors: ['banner', 'skruktura', 'aktual', 'kontakt'],
+                anchors: ['banner', 'skruktura', 'aktual', 'partners', 'kontakt'],
                 menu: '#page-nav',
                 css3: true,
                 scrollHorizontally: true,

@@ -1,7 +1,7 @@
 var prtn = new Vue({
     el: '#prtn',
     data: {
-        selectedContry: '',
+        selectedCountry: '',
         partners: [
             {
                 prtnContry: 'Angola',

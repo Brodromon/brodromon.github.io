@@ -312,7 +312,7 @@ div.section:nth-of-type(2) {
     font-weight: bold;
 }
 .info__card p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
 }
 #why-facts {
@@ -343,14 +343,14 @@ div.section:nth-of-type(2) {
     text-transform: uppercase;
     margin: 0;
 }
-#prtn__contry {
+#prtn__country {
     width: 100%;
     padding: 10px;
     font-size: 1.5em;
     border-radius: 10px;
     box-shadow: 4px 2px 4px #888;
 }
-#prtn__contry option {
+#prtn__country option {
     font-size: 1em;
 }
 #prtn__list h3 {
