@@ -1,0 +1,23 @@
+.city ul {
+  padding: 0;
+  margin: 0; }
+  .city ul li {
+    list-style: none;
+    padding: 7px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333; }
+    .city ul li:hover {
+      cursor: pointer;
+      color: #555; }
+
+.city-text ul {
+  padding: 0; }
+  .city-text ul h5 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; }
+  .city-text ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 1.2em; }

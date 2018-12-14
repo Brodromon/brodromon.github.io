@@ -17,34 +17,39 @@
 <body>
         <ul class="menu row justify-content-center">
                 <li class="has-dropdown col-2">
-                    <ul class="dropdown">
-                        <li><a href="#">Struktura szkoly</a></li>
-                        <!-- <ul class="dropdown">
-                            <li><a href="#">Polska</a></li>
-                            <li><a href="#">Ukraina</a></li>
-                        </ul> -->
-                    </ul>
-                    <a class="menu__link has_chevron" href="#">O Instytucie<span class="lnr lnr-chevron-down"></span></a>
-                </li>
+                        <ul class="dropdown">
+                            <li><a href="/o-instytucie/o-instytucie-pl.html">O Instytucie</a></li>
+                            <li class="str has-dropdown"> 
+                                    <a  href="#">Struktura szkoły</a>
+                                    <ul class="dob-dropdown">
+                                        <li><a href="/struktura/struktura-polska-pl.html">Polska</a></li>
+                                        <li><a href="/struktura/struktura-ukraina-pl.html">Ukraina</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                        <a class="menu__link has_chevron" href="/index.html">Instytut<span class="lnr lnr-chevron-down"></span></a>
+                    </li>
                 <li data-menuanchor="aktual" class="has-dropdown col-2">
-                    <a class="menu__link has_chevron" href="#aktual">Aktualnosci</a>
+                    <a class="menu__link has_chevron" href="#aktual">Aktualności</a>
                 </li>
                 <li class="has-dropdown col-2">
-                    <a class="menu__link has_chevron" href="#">Historii studentow</a>
+                    <a class="menu__link has_chevron" href="/historii/historii-pl.html">Historii studentów</a>
                 </li>
                 <li class="has-dropdown col-2">
                     <a class="menu__link has_chevron" href="#">Oferta Edukacyjna<span class="lnr lnr-chevron-down"></span></a>
                     <ul class="dropdown">
-                        <li><a href="#">Struktura Szkoly</a></li>
-                        <li><a href="#">Kursy</a></li>
-                        <li><a href="#">Praktyki instaze</a></li>
+                        <li><a href="/studia_i_stopnia/studia_i_stopnia-pl.html">Studia I stopnia</a></li>
+                        <li><a href="/pr_podw_dypl/programy_podwojnego_dyplomowania-pl.html">Programy podwójnego dypłomowania</a></li>
+                        <li><a href="/sk-lentie/sk-letnie-pl.html">Szkoły letnie</a></li>
+                        <li><a href="/kursy/kursy-pl.html">Kursy</a></li>
+                        <li><a href="/praktyki/praktyki_i_staze-pl.html">Praktyki i staże</a></li>
                     </ul>
                 </li>
                 <li class="has-dropdown col-2">
                     <a class="menu__link has_chevron" href="#">Rekrutacja<span class="lnr lnr-chevron-down"></span></a>
                     <ul class="dropdown">
-                        <li><a href="#">Proces rekrutacji</a></li>
-                        <li><a href="#">Wymagane documenty</a></li>
+                        <li><a href="/proces_rekr/proces_rekrutacji-pl.html">Proces rekrutacji</a></li>
+                        <li><a href="/wymag_dok/wymagane_dokumenty-pl.html">Wymagane dokumenty</a></li>
                     </ul>
                 </li>
                 <li data-menuanchor="kontakt" class="col-2">
@@ -64,7 +69,7 @@
                 <div class="container">
                     <div class="row justify-content-end">
                         <div id="banner-inst-info">
-                            <h4>wyższa szkoła gospodarki <img id="logo" src="img/logowsg.png" alt=""></h4> <br>
+                            <h4>wyższa szkoła gospodarki <img id="logo" src="/img/logowsg.png" alt=""></h4> <br>
                             <h1><div style="display: inline-block;" class="element"></div></h1> <br>
                             <h5>im. Mikołaja Kopernika</h5>
                         </div>
@@ -151,7 +156,7 @@
             <div class="section" data-anchor="aktual">
                 <div class="container-fluid">
                     <div class="col-12 section-hdr">
-                        <h1>aktualnosci</h1>
+                        <h1>aktualności</h1>
                         <hr>
                     </div>
                     <div class="row">
@@ -252,7 +257,7 @@
                             <p>Imie*</p> <input type="text" required>
                             <p>Email*</p> <input type="email" required>
                             <p>Telefon</p> <input type="number">
-                            <p>Wiadomosc*</p> <textarea required id=""></textarea> <br>
+                            <p>Wiadomość*</p> <textarea required id=""></textarea> <br>
                             <button type="submit">Wyslac</button>
                         </form>
                     </div>

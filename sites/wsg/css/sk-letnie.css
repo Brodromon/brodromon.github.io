@@ -1,0 +1,35 @@
+.camps {
+  padding: 0;
+  width: 90%;
+  margin-left: 5%; }
+  .camps .camp {
+    list-style: none;
+    border-bottom: 1px #249AC6 solid;
+    padding: 70px 30px 30px;
+    position: relative; }
+    .camps .camp:first-child {
+      padding-top: 30px; }
+    .camps .camp:hover {
+      cursor: default; }
+    .camps .camp:hover::before {
+      transform: scaleX(1); }
+    .camps .camp:before {
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      content: '';
+      background: #249AC6;
+      bottom: -2px;
+      left: 0;
+      transform: scaleX(0);
+      transition: .3s ease;
+      transform-origin: center center; }
+    .camps .camp h5 {
+      font-weight: bold;
+      color: #333;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      text-align: center; }
+    .camps .camp p {
+      font-size: 1.1em;
+      margin: 0; }
