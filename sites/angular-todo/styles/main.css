@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+* {
+  font-family: "Droid Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 100%;
+}
+#sidebar {
+  background: #2b2f3e;
+  width: 23%;
+  height: 100%;
+  position: fixed;
+  padding: 0;
+}
+#sidebar h1 {
+  color: #525665;
+  margin: 60px;
+  font-size: 50px;
+}
+#sidebar ul {
+  padding: 0;
+}
+#sidebar li {
+  list-style: none;
+  font-size: 20px;
+  padding: 20px 0px 20px 60px;
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+}
+#sidebar li:hover {
+  color: #fff;
+  background: #ff2f5a;
+  cursor: pointer;
+}
+#main {
+  width: 75%;
+  float: right;
+  padding: 20px 20px 20px;
+}
+#itemsMain,
+#commentsMain {
+  width: 45%;
+  box-shadow: 0 0 10px;
+  display: inline-block;
+}
+#add {
+  width: 100%;
+}
+#itemsMain {
+  min-height: 500px;
+  float: left;
+  padding: 60px 30px 60px 60px;
+}
+#itemsMain h1 {
+  margin: 0 0 30px;
+  color: #777c88;
+  font-size: 50px;
+}
+#itemsMain input {
+  height: 40px;
+  line-height: 40px;
+  border: 1px #c9c9c9 solid;
+  width: 65%;
+  border-radius: 7px;
+  font-size: 22px;
+}
+#itemsMain #add_btn {
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  border: 1px #27ccc0 solid;
+  border-radius: 7px;
+  font-size: 22px;
+  color: #27ccc0;
+  float: right;
+}
+#itemsMain #add_btn:hover {
+  cursor: pointer;
+  background: #27ccc0;
+  color: #fff;
+}
+.task {
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  border-bottom: 1px #c9c9c9 solid;
+  margin: 12px 0;
+  padding-left: 7px;
+}
+.task .task_name {
+  width: 63%;
+  float: left;
+}
+.task .counts_com {
+  margin-top: 15px;
+  padding: 0 5px;
+  height: 25px;
+  line-height: 25px;
+  min-width: 20px;
+  border-radius: 13px;
+  font-size: 15px;
+  text-align: center;
+  float: right;
+  background: #27ccc0;
+  color: #fff;
+}
+.task .del {
+  margin-top: 9px;
+  border-radius: 7px;
+  float: right;
+  height: 42px;
+  line-height: 42px;
+  width: 20%;
+  border: 2px #ff3159 solid;
+  text-align: center;
+  color: #ff3159;
+  font-size: 22px;
+}
+.task .del:hover {
+  cursor: pointer;
+  background: #ff3159;
+  color: #fff;
+}
+.task:hover {
+  cursor: pointer;
+  padding-left: 2px;
+  border-left: 5px #ff3159 solid;
+}
+#commentsMain {
+  float: right;
+  min-height: 200px;
+}
+#commentsMain .task_name {
+  margin: 0 0 30px;
+  color: #777c88;
+  font-size: 40px;
+  margin: 20px;
+}
+#commentsMain .comment {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px #c9c9c9 solid;
+  font-size: 20px;
+}
+#add_com input {
+  height: 100px;
+  line-height: 22px;
+  border: 1px #c9c9c9 solid;
+  width: 65%;
+  border-radius: 7px;
+  font-size: 22px;
+  margin: 20px 20px 20px 20px;
+}

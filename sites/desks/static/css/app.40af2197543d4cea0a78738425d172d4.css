@@ -1,0 +1,528 @@
+body {
+    background: url("../img/bg.jpeg");
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%}
+    .li {
+        overflow-x: hidden;
+    }
+    .li:hover .button-delete {
+        right: 5px;
+    }
+.button-change-complete, .button-delete {
+    border: none;
+    background: transparent;
+    color: #666;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15px;
+    line-height: normal;
+    height:  20px;
+    width:  20px;
+    top: 50%;
+    right: -30px;
+    margin-top: -10px;
+    transition: .2s linear;
+}
+.button-change-complete {
+    right: 12px;
+}
+.button-delete:before {
+    content: "X"}
+.button-delete:hover {
+    color: #711;
+}
+.button-change-complete {
+    color: #1f6c08;
+}
+.button-change-complete:hover {
+    color: green;
+}
+#header {
+    position: relative;
+    background: #f9f9f9;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid #666;
+}
+#header #logo {
+    position: fixed;
+    display: inline-block;
+    width: 100px;
+    right: 50%;
+    margin-right: -50px;
+    text-align: center;
+}
+#header #logo.logged {
+    left: 0;
+}
+#header #login {
+    display: inline-block;
+}
+#header #user-info {
+    float: right;
+}
+#header #user-info h5 {
+    margin: 0;
+    font-size: 12px;
+    display: inline-block;
+}
+#header input {
+    height: 30px;
+    width: 200px;
+    font-size: 12px;
+}
+#unlogged-user-workplace h1 {
+    text-align: center;
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    width: 500px;
+    right: 50%;
+    margin-right: -250px;
+    margin-top: -50px;
+    background: #fff;
+    line-height: 100px;
+    border-radius: 6px;
+}
+[v-cloak] {
+    display: none;
+}
+@media screen and (max-width:450px) {
+    #header #user-info h5 {
+    display: none;
+}
+}#login-wrapper {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+#login-wrapper, #signup-wrapper {
+    background: #fff;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    box-sizing: content-box;
+    margin-top: -100px;
+    margin-right: -160px;
+}
+#signup-wrapper {
+    padding: 10px 10px 35px;
+}
+#signup-form form {
+    position: relative;
+}
+#signup-wrapper button {
+    width: 300px;
+    height: 40px;
+    background: #0baf38;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+#login-wrapper .alert {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%}
+#login-form {
+    position: relative;
+}
+.error {
+    position: absolute;
+    background: #c9211d;
+    padding: 10px 0;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    left: -320px;
+}
+#email-error {
+    top: 0;
+}
+#pass-error {
+    top: 50px;
+}
+#cpass-error {
+    top: 100px;
+}
+.error:after {
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: 10px;
+    border: 10px solid transparent;
+    border-left: 20px solid #c9211d;
+}
+#login-form button, #main-wrapper input {
+    width: 300px;
+    height: 40px;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+#main-wrapper input {
+    padding-left: 5px;
+    border: 1px solid #c8c8c8;
+}
+#login-form button {
+    margin: 0;
+    background: #1355ac;
+    color: #fff;
+    font-weight: 700;
+}
+#login-form button:active {
+    background: #1365ac;
+}
+#main-wrapper h4 {
+    margin: 0 0 10px;
+}
+h5 {
+    margin-top: 20px;
+}
+#reg-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #0baf38;
+    border: none;
+    color: #fff;
+}
+#reg-btn:active {
+    background: #10b627;
+}
+button#back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25px;
+    background: #1355ac;
+    border: 2px solid #fff;
+    border-top: 0;
+}
+.btn-default {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn-default i {
+    margin-right: 5px;
+}
+#wrapper {
+    min-height: 300px;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+#reg-form button, #reg-form input {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10px;
+    height: 30px;
+}
+#reg-form .alert {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+@media screen and (max-width:992px) {
+    #wrapper {
+    padding: 20px 10px;
+}
+#wrapper h1 {
+    line-height: normal;
+}
+}@media screen and (max-width:768px) {
+    #wrapper h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+}@media screen and (max-width:450px) {
+    #wrapper h1 {
+    font-size: 1.3em;
+}
+}#workplace input {
+    background: #fff;
+    border: 1px solid #999;
+    padding: 6px 5px;
+    border-radius: 6px;
+}
+#side {
+    top: 0;
+    border: none;
+    background: transparent;
+    line-height: 50px;
+    font-size: 25px;
+}
+#side, #sidebar {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+#sidebar {
+    box-shadow: 0 10px 10px;
+    padding: 0;
+    background: #fff;
+    top: 50px;
+    bottom: 0;
+    max-width: 350px;
+}
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    -webkit-transform: translateX(-350px);
+    transform: translateX(-350px);
+    opacity: 1;
+}
+#sidebar #sidebar-add-desk {
+    padding: 10px;
+    margin: 10px 0 20px;
+}
+#sidebar #sidebar-add-desk input {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid #c2c2c2;
+}
+#sidebar #sidebar-add-desk:before {
+    content: "Add a new desk";
+    text-align: center;
+    display: block;
+    opacity: .4;
+    margin-bottom: 10px;
+}
+#sidebar #sidebar-add-desk button, #sidebar #sidebar-add-desk input {
+    width: 100%}
+#sidebar #sidebar-add-desk button {
+    margin-top: 5px;
+}
+#sidebar hr {
+    margin: 0;
+}
+#sidebar #sidebar-desks-list ul {
+    padding: 10px;
+    padding-top: 0;
+    height: 75vh;
+    overflow-y: scroll;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%}
+#sidebar #sidebar-desks-list ul li {
+    list-style: none;
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow-x: hidden;
+}
+#sidebar #sidebar-desks-list ul li h5 {
+    margin: 0;
+}
+#sidebar #sidebar-desks-list ul li h5:hover {
+    cursor: pointer;
+    color: #666;
+}
+#sidebar #sidebar-desks-list ul li.deskeditable {
+    padding: 8.5px 9px 9px 8px;
+}
+#sidebar #sidebar-desks-list ul li.deskeditable input {
+    width: 85%;
+    height: 27px;
+    overflow: auto;
+    word-wrap: break-word;
+    border: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 6px;
+    padding: 6px;
+}
+#sidebar #sidebar-desks-list ul li:hover button {
+    right: 10px;
+}
+#sidebar #sidebar-desks-list ul:empty:before {
+    content: "You have no desks";
+    opacity: .4;
+    display: block;
+    text-align: center;
+}
+#sidebar #sidebar-desks-list ul:not(:empty) {
+    margin-top: 10px;
+}
+#sidebar #sidebar-desks-list ul:not(:empty):before {
+    content: "Your desks";
+    opacity: .4;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#desks {
+    margin-top: 55px;
+}
+#desks .desk {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 5px;
+    width: 300px;
+    border-radius: 4px;
+}
+#desks .desk .desk-hdr {
+    border-radius: 4px 4px 0 0;
+    background: #ebebeb;
+    padding: 17px;
+    position: relative;
+}
+#desks .desk .desk-hdr input {
+    height: 35px;
+    padding: 6px;
+    border: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 6px;
+}
+#desks .desk .desk-hdr h5 {
+    margin: 0;
+}
+#desks .desk .desk-hdr h5:hover {
+    color: #666;
+    cursor: pointer;
+}
+#desks .desk .desk-hdr.deskeditable {
+    padding: 6px 16px 8px 10px;
+}
+#desks .desk .desk-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+#desks .desk .desk-body #minimizer-btn {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+#desks .desk .desk-body ul {
+    transition: .3s ease;
+    margin: 0;
+    padding: 10px;
+    width: 100%}
+#desks .desk .desk-body ul:empty {
+    padding: 0;
+}
+#desks .desk .desk-body ul li {
+    position: relative;
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 15px;
+    padding-left: 21px;
+    list-style: none;
+    overflow-x: hidden;
+}
+#desks .desk .desk-body ul li:hover .button-delete {
+    right: 10px;
+}
+#desks .desk .desk-body ul li .button-delete {
+    transition: .2s ease;
+    right: -35px;
+}
+#desks .desk .desk-body ul li p {
+    width: 85%;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+}
+#desks .desk .desk-body ul li p:hover {
+    color: #666;
+    cursor: pointer;
+}
+#desks .desk .desk-body ul li input {
+    width: 85%;
+    height: 34px;
+    overflow: auto;
+    word-wrap: break-word;
+    border: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 6px;
+    padding: 6px;
+    margin-left: 6px;
+}
+#desks .desk .desk-body ul li.editable {
+    padding: 8px;
+}
+#desks .desk .desk-footer {
+    background: #ebebeb;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+#desks .desk .desk-footer input {
+    display: inline-block;
+    width: 195px;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid #c2c2c2;
+    box-sizing: border-box;
+}
+#desks .desk .desk-footer .add-task {
+    display: inline-block;
+    width: 80px;
+    padding: 5px;
+}
+@media screen and (max-width:768px) {
+    #desks {
+    padding: 0 10px;
+}
+#desks .desk {
+    width: 100%;
+    margin-left: 0;
+}
+}@media screen and (max-width:450px) {
+    #header #logo {
+    width: 100px;
+}
+}h1[data-v-4241e014], h2[data-v-4241e014] {
+    font-weight: 400;
+}
+ul[data-v-4241e014] {
+    list-style-type: none;
+    padding: 0;
+}
+li[data-v-4241e014] {
+    display: inline-block;
+    margin: 0 10px;
+}
+a[data-v-4241e014] {
+    color: #42b983;
+}
