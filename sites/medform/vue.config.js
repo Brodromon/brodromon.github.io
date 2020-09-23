@@ -1,5 +1,3 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/sites/medform/'
-      : '/'
+    publicPath: '/sites/medform/'
   }
